@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1314 820" width="1314" height="820" role="img" aria-labelledby="titulo desc">
+<title id="titulo">Arquitetura do Processo — Ajuste de Caixa</title>
+<desc id="desc">Fluxo de transformação digital: antes, planilhas manuais e sem auditoria; depois, Power Apps, Power Automate e SharePoint com governança e trilha auditável.</desc>
+
+<defs>
+  <marker id="arrowMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#8A94A6"/>
+  </marker>
+  <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#1B63AE"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="1314" height="820" fill="#FFFFFF"/>
+
+<text x="60" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#1B63AE">DE PLANILHAS PARA POWER PLATFORM</text>
+
+<!-- ANTES container -->
+<rect x="40" y="90" width="1234" height="270" rx="22" fill="#EEF3FA" stroke="#E1E7F0"/>
+<rect x="70" y="76" width="110" height="30" rx="15" fill="#FFFFFF" stroke="#E1E7F0" stroke-width="1.5"/>
+<text x="125" y="96" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#586274">ANTES</text>
+
+<!-- Antes box 1 -->
+<rect x="70" y="130" width="351" height="190" rx="14" fill="#FFFFFF" stroke="#C7CEDC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<rect x="96" y="160" width="44" height="36" rx="4" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<line x1="111" y1="160" x2="111" y2="196" stroke="#8A94A6" stroke-width="1.5"/>
+<line x1="126" y1="160" x2="126" y2="196" stroke="#8A94A6" stroke-width="1.5"/>
+<line x1="96" y1="172" x2="140" y2="172" stroke="#8A94A6" stroke-width="1.5"/>
+<line x1="96" y1="184" x2="140" y2="184" stroke="#8A94A6" stroke-width="1.5"/>
+<text x="96" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#28324C">Planilhas Excel</text>
+<text x="96" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Processo disperso e</text>
+<text x="96" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">sobrecarregado</text>
+
+<!-- Antes box 2 -->
+<rect x="481" y="130" width="351" height="190" rx="14" fill="#FFFFFF" stroke="#C7CEDC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<circle cx="529" cy="178" r="20" fill="#FFFFFF" stroke="#8A94A6" stroke-width="2"/>
+<line x1="529" y1="178" x2="529" y2="165" stroke="#8A94A6" stroke-width="2" stroke-linecap="round"/>
+<line x1="529" y1="178" x2="539" y2="183" stroke="#8A94A6" stroke-width="2" stroke-linecap="round"/>
+<text x="507" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#28324C">Processamento Manual</text>
+<text x="507" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Sujeito a erro humano</text>
+<text x="507" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">e retrabalho</text>
+
+<!-- Antes box 3 -->
+<rect x="892" y="130" width="351" height="190" rx="14" fill="#FFFFFF" stroke="#C7CEDC" stroke-width="1.5" stroke-dasharray="6 5"/>
+<path d="M 940 158 L 961 196 L 919 196 Z" fill="#FBEDE7" stroke="#B7461F" stroke-width="2" stroke-linejoin="round"/>
+<line x1="940" y1="172" x2="940" y2="184" stroke="#B7461F" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="940" cy="190" r="1.6" fill="#B7461F"/>
+<text x="918" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#28324C">Sem Trilha de Auditoria</text>
+<text x="918" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Baixa rastreabilidade</text>
+<text x="918" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">das aprovações</text>
+<rect x="918" y="292" width="150" height="24" rx="12" fill="#FBEDE7" stroke="#F3D6CC"/>
+<text x="993" y="308" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" fill="#B7461F">RISCO OPERACIONAL</text>
+
+<!-- Arrows antes -->
+<line x1="429" y1="225" x2="472" y2="225" stroke="#8A94A6" stroke-width="2" marker-end="url(#arrowMuted)"/>
+<line x1="840" y1="225" x2="883" y2="225" stroke="#8A94A6" stroke-width="2" marker-end="url(#arrowMuted)"/>
+
+<!-- Transição -->
+<line x1="657" y1="372" x2="657" y2="440" stroke="#2E86D6" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowAccent)"/>
+<text x="685" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1" fill="#1B63AE">MIGRAÇÃO PARA A POWER PLATFORM</text>
+
+<!-- DEPOIS container -->
+<rect x="40" y="460" width="1234" height="300" rx="22" fill="#E9F1FB" stroke="#CFE2F7"/>
+<rect x="70" y="446" width="250" height="30" rx="15" fill="#FFFFFF" stroke="#2E86D6" stroke-width="1.5"/>
+<text x="195" y="466" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1" fill="#1B63AE">DEPOIS — POWER PLATFORM</text>
+
+<!-- Depois box 1: Solicitação -->
+<rect x="70" y="500" width="260" height="210" rx="14" fill="#FFFFFF" stroke="#CFE2F7" stroke-width="1.5"/>
+<rect x="70" y="500" width="260" height="4" rx="2" fill="#2E86D6"/>
+<circle cx="306" cy="524" r="14" fill="#2E86D6"/>
+<text x="306" y="529" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+<path d="M 104 536 h22 l10 10 v30 h-32 Z" fill="#FFFFFF" stroke="#1B63AE" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 126 536 v10 h10" fill="none" stroke="#1B63AE" stroke-width="2" stroke-linejoin="round"/>
+<line x1="110" y1="558" x2="130" y2="558" stroke="#1B63AE" stroke-width="1.5"/>
+<line x1="110" y1="565" x2="130" y2="565" stroke="#1B63AE" stroke-width="1.5"/>
+<line x1="110" y1="572" x2="122" y2="572" stroke="#1B63AE" stroke-width="1.5"/>
+<text x="96" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1B63AE">Solicitação</text>
+<text x="96" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Abertura do pedido de</text>
+<text x="96" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">ajuste de caixa</text>
+
+<!-- Depois box 2: Power Apps -->
+<rect x="375" y="500" width="260" height="210" rx="14" fill="#FFFFFF" stroke="#CFE2F7" stroke-width="1.5"/>
+<rect x="375" y="500" width="260" height="4" rx="2" fill="#2E86D6"/>
+<circle cx="611" cy="524" r="14" fill="#2E86D6"/>
+<text x="611" y="529" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+<rect x="403" y="536" width="40" height="40" rx="10" fill="#2E86D6"/>
+<path d="M 411 558 l7 7 l13 -15" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="401" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1B63AE">Power Apps</text>
+<text x="401" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Aprovação e</text>
+<text x="401" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">supervisão do fluxo</text>
+
+<!-- Depois box 3: Power Automate -->
+<rect x="680" y="500" width="260" height="210" rx="14" fill="#FFFFFF" stroke="#CFE2F7" stroke-width="1.5"/>
+<rect x="680" y="500" width="260" height="4" rx="2" fill="#2E86D6"/>
+<circle cx="916" cy="524" r="14" fill="#2E86D6"/>
+<text x="916" y="529" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+<circle cx="728" cy="558" r="20" fill="#E3EEFB" stroke="#2E86D6" stroke-width="2"/>
+<path d="M 719 558 a9 9 0 1 1 3 6.8" fill="none" stroke="#1B63AE" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M 719 558 l -5 -2 l 1 6 Z" fill="#1B63AE"/>
+<text x="706" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1B63AE">Power Automate</text>
+<text x="706" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Execução autônoma</text>
+<text x="706" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">das regras de negócio</text>
+
+<!-- Depois box 4: SharePoint -->
+<rect x="985" y="500" width="260" height="210" rx="14" fill="#FFFFFF" stroke="#CFE2F7" stroke-width="1.5"/>
+<rect x="985" y="500" width="260" height="4" rx="2" fill="#2E86D6"/>
+<circle cx="1221" cy="524" r="14" fill="#2E86D6"/>
+<text x="1221" y="529" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4</text>
+<path d="M 1033 536 L 1053 543 V 558 C 1053 570 1033 576 1033 576 C 1033 576 1013 570 1013 558 V 543 Z" fill="#E3EEFB" stroke="#2E86D6" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 1024 555 l6 6 l12 -13" fill="none" stroke="#1B63AE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1011" y="620" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1B63AE">SharePoint</text>
+<text x="1011" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">Listas de governança</text>
+<text x="1011" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#586274">e trilha auditável</text>
+
+<!-- Arrows depois -->
+<line x1="338" y1="605" x2="367" y2="605" stroke="#1B63AE" stroke-width="2" marker-end="url(#arrowAccent)"/>
+<line x1="643" y1="605" x2="672" y2="605" stroke="#1B63AE" stroke-width="2" marker-end="url(#arrowAccent)"/>
+<line x1="948" y1="605" x2="977" y2="605" stroke="#1B63AE" stroke-width="2" marker-end="url(#arrowAccent)"/>
+
+<!-- Rodapé -->
+<rect x="427" y="718" width="460" height="34" rx="17" fill="#E3EEFB" stroke="#CFE2F7"/>
+<text x="657" y="740" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#1B63AE">100% AUDITÁVEL &#183; ZERO INTERVENÇÃO MANUAL</text>
+
+</svg>
