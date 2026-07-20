@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Pablo Melo — Currículo</title>
+<style>
+  @page { size: A4; margin: 13mm 16mm; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;color:#1A2030;font-size:10.4pt;line-height:1.42;background:#fff}
+  .page{max-width:800px;margin:0 auto;padding:28px 6px}
+  h1{font-size:22pt;font-weight:700;letter-spacing:-.01em;color:#151A22}
+  .role{font-size:11pt;color:#1B63AE;font-weight:600;margin-top:3px}
+  .contact{margin-top:9px;font-size:8.8pt;color:#4A5468}
+  .contact b{color:#1B63AE;font-weight:600}
+
+  h2{font-size:9.2pt;letter-spacing:.11em;text-transform:uppercase;color:#1B63AE;font-weight:700;border-bottom:1.4pt solid #1B63AE;padding-bottom:3px;margin-top:16px;margin-bottom:8px}
+  section:first-of-type h2{margin-top:14px}
+
+  .resumo{font-size:10.1pt;color:#2A3244}
+
+  .job{margin-bottom:11px;break-inside:avoid;page-break-inside:avoid}
+  .job:last-child{margin-bottom:0}
+  .job-head{font-size:10.6pt}
+  .job-title{font-weight:700;color:#151A22}
+  .job-date{font-size:8.8pt;color:#6B7690;font-weight:600}
+  .job-org{font-size:9.4pt;color:#4A5468;font-weight:500;margin:1px 0 5px}
+  .job-org b{color:#1B63AE;font-weight:600}
+  ul{list-style:none;margin:0;padding:0}
+  li{position:relative;padding-left:13px;margin-bottom:3px;font-size:9.6pt;color:#2A3244}
+  li::before{content:"▸";position:absolute;left:0;color:#1B63AE;font-size:8.5pt;top:1px}
+  li b{font-weight:700;color:#151A22}
+
+  .edu-row{margin-bottom:5px;font-size:9.6pt}
+  .edu-row .inst{color:#4A5468}
+  .edu-row b{color:#151A22}
+  .edu-row .date{color:#6B7690;font-size:8.8pt;font-weight:600}
+
+  .cert-list{list-style:none;font-size:9.4pt}
+  .cert-list li{padding-left:13px;margin-bottom:3px}
+
+  .skills-grid{display:block}
+  .skill-row{font-size:9.4pt;line-height:1.5;margin-bottom:4px}
+  .skill-row b{color:#151A22;font-weight:700}
+  .skill-row span{color:#4A5468}
+
+  .langs{font-size:9.6pt;color:#2A3244}
+  .langs b{color:#151A22}
+
+  @media print{
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .page{padding:0}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>PABLO MELO</h1>
+    <div class="role">Analista de Dados Sênior · Analytics Engineering · Automação &amp; IA Aplicada</div>
+    <div class="contact">Recife, PE · (81) 98650-2789 · pablohenriquemelo@outlook.com.br · <b>linkedin.com/in/pablohnrque</b> · <b>github.com/pablohmelo02</b></div>
+  </header>
+
+  <section>
+    <h2>Resumo Profissional</h2>
+    <p class="resumo">Analista de Dados Sênior com atuação em Analytics Engineering, automação e IA aplicada. Construo <b>pipelines que decidem sozinhos</b> — visão computacional, motores de regras de negócio testáveis, integração com sistemas legados e auditoria total — e dashboards que sustentam decisão executiva. Resultados reais entregues: <b>até 90% de redução</b> no tempo de execução de consultas SQL, <b>alta de 52% para 98%</b> na taxa de sucesso de automações críticas de negócio e <b>mais de 58h/mês</b> de trabalho manual eliminado por automação (RPA).</p>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">Analista de Dados e Planejamento (PL)</span> <span class="job-date">· Out 2025 – Atual</span></div>
+      <div class="job-org"><b>Monte Rodovias / Austra Vias</b> · Concessionária rodoviária · Recife/PE · Focal de dados do setor</div>
+      <ul>
+        <li>Reduzi o tempo de execução de consultas SQL em <b>até 90%</b>, por meio de otimização e reestruturação de queries em bases operacionais críticas.</li>
+        <li>Desenvolvi robô próprio de visão computacional (Python, YOLO/ONNX Runtime, OCR) para autuação de veículos, substituindo fornecedor terceirizado e elevando a taxa de sucesso de <b>52% para 98%</b>; modelo de detecção de placas fine-tuned e validado em 344 imagens (97,1% vs. 93,6% do modelo genérico).</li>
+        <li>Criei motor de regras de auditoria pré-autuação que reduziu o tempo de validação de trânsitos de <b>~1h45 para 20 minutos</b> (~5x mais volume, zero erro humano) e identifiquei/corrigi, via auditoria própria, um bug de regra de negócio causando cancelamentos incorretos em produção.</li>
+        <li>Automatizei a extração mensal de relatórios de tráfego e receita com Playwright em paralelo, eliminando extração manual recorrente em múltiplas praças.</li>
+        <li>Reestruturei o processo de Ajuste de Caixa, substituindo planilhas sobrecarregadas por uma solução <b>100% auditável</b> em Power Apps, Power Automate e SharePoint, com zero intervenção manual.</li>
+        <li>Construí dashboards gerenciais (Power BI) e APIs REST (Python/FastAPI) para análise operacional, incluindo detecção de falhas de OCR por câmera/pista.</li>
+        <li>Automatizei rotinas com RPA (Power Automate Web/Desktop) e Python, eliminando <b>+58h/mês</b> de trabalho manual; atuei na gestão e sustentação do ambiente de RPA (filas, orquestrador, robôs em produção) e no suporte analítico às áreas de CCA, CCT, CCO e Operações.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">Analista de Negócios (JR &rarr; PL &rarr; SR)</span> <span class="job-date">· Nov 2023 – Set 2025</span></div>
+      <div class="job-org"><b>Bradesco</b> · Progressão de carreira: Analista JR &rarr; PJ (PL) &rarr; Prime (SR) · Recife/PE</div>
+      <ul>
+        <li>Otimizei portfólios de clientes (incluindo alta renda/Prime) com análises de dados e estratégias personalizadas, maximizando rentabilidade e mitigando riscos.</li>
+        <li>Apliquei inteligência de dados para identificar clientes de alto potencial e oportunidades de negócio, subsidiando decisões de cross-sell/up-sell.</li>
+        <li>Criei relatórios e dashboards analíticos que fortaleceram a comunicação com a liderança e a tomada de decisão estratégica.</li>
+        <li>Organizei demandas e processos com metodologias ágeis (Kanban), ganhando eficiência na gestão da carteira.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">Analista Financeiro / Tesouraria</span> <span class="job-date">· Abr 2023 – Nov 2023</span></div>
+      <div class="job-org"><b>Mundo do Cabeleireiro</b></div>
+      <ul>
+        <li>Desenvolvi soluções de RPA para envio automatizado de faturas às filiais, garantindo pontualidade e padronização das comunicações.</li>
+        <li>Liderei projetos de análise de dados, transformando grandes volumes de informação em KPIs de apoio à decisão.</li>
+        <li>Realizei conciliação bancária, controle de saldos de tesouraria e gestão de contas a pagar e receber (TOTVS Winthor).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">Estágio Contábil e Fiscal</span> <span class="job-date">· Out 2022 – Mar 2023</span></div>
+      <div class="job-org"><b>Mendesca</b></div>
+      <ul>
+        <li>Executei conciliação, composição de contas, balancete e razão analítica, com análises de apoio à gestão.</li>
+        <li>Realizei lançamento de notas fiscais e apuração de tributos (PIS, COFINS e ICMS); apoiei consultoria tributária e recuperação de créditos.</li>
+        <li>Automatizei rotinas com macros, Power Query e Power Pivot, aumentando a eficiência operacional.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">Aprendiz — Pagamento de Benefícios</span> <span class="job-date">· Out 2021 – Set 2022</span></div>
+      <div class="job-org"><b>RPL Engenharia</b></div>
+      <ul>
+        <li>Apoiei a gestão de benefícios de <b>mais de 3.000 colaboradores</b> (VA/VR, transporte, saúde, combustível e seguro de vida).</li>
+        <li>Desenvolvi planilhas integradas aos relatórios do sistema para automatizar cálculos de elegibilidade e faturamento, reduzindo erros manuais.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formação Acadêmica</h2>
+    <div class="edu-row"><b>Bacharelado em Ciências Contábeis</b> <span class="inst">· UNINASSAU</span> <span class="date">· 2022 – 2025</span></div>
+    <div class="edu-row"><b>Técnico em Redes de Computadores</b> <span class="inst">· ETE Prof. Lucilo Ávila Pessoa</span> <span class="date">· 2018 – 2020</span></div>
+  </section>
+
+  <section>
+    <h2>Certificações &amp; Cursos</h2>
+    <ul class="cert-list">
+      <li>CEA — Certificação de Especialista em Investimentos ANBIMA</li>
+      <li>Microsoft Power BI para Business Intelligence e Data Science</li>
+      <li>DevOps — Rocketseat</li>
+      <li>Fundamentos em Python (Pandas / PySpark)</li>
+      <li>Formação em Liderança</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Competências Técnicas</h2>
+    <div class="skills-grid">
+      <div class="skill-row"><b>Linguagens:</b> <span>Python (Pandas, PySpark, openpyxl) · SQL (T-SQL) · JavaScript</span></div>
+      <div class="skill-row"><b>Banco de Dados:</b> <span>SQL Server · SQLite · MySQL · Modelagem de Dados (DDL) · Power Query</span></div>
+      <div class="skill-row"><b>BI &amp; Análise:</b> <span>Power BI · DAX · Dashboards Interativos · KPIs · Análise Preditiva · Detecção de Anomalias</span></div>
+      <div class="skill-row"><b>Automação &amp; RPA:</b> <span>Playwright · UiPath · Power Automate (Web e Desktop) · Blue Prism · Selenium</span></div>
+      <div class="skill-row"><b>Power Platform:</b> <span>Power Apps · Power Automate · SharePoint · Power BI Service · Microsoft Fabric</span></div>
+      <div class="skill-row"><b>IA &amp; Visão Computacional:</b> <span>YOLO / ONNX Runtime · OCR · OpenCV · Modelos Fine-tuned Próprios · Motores de Regras de Decisão</span></div>
+      <div class="skill-row"><b>Frameworks &amp; APIs:</b> <span>FastAPI · Pydantic · SQLAlchemy · APScheduler · pytest · APIs REST (consumo e desenvolvimento)</span></div>
+      <div class="skill-row"><b>Integrações &amp; ERPs:</b> <span>SAP S/4HANA · TOTVS (Winthor) · SharePoint · Engenharia reversa de sistemas legados</span></div>
+      <div class="skill-row"><b>Gestão de Ambiente RPA:</b> <span>Orquestrador · Monitoramento de Filas · Monitoramento de Robôs em Produção · Validação de Requisitos</span></div>
+      <div class="skill-row"><b>Versionamento &amp; Ferramentas:</b> <span>Git · GitHub · GitLab · Jira · Enterprise Architect</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <p class="langs"><b>Português</b> (nativo) · <b>Inglês</b> (técnico / leitura)</p>
+  </section>
+
+</div>
+</body>
+</html>
