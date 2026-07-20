@@ -3,18 +3,40 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfólio — Pablo Melo | Dados, Automação & Planejamento</title>
-<meta name="description" content="Portfólio de Pablo Melo — Analista de Dados, Automação e Planejamento. Power BI, SQL, Python, APIs, Playwright, RPA e FP&A com resultados mensuráveis." />
+<title>Pablo Melo — Data & Analytics Engineer | Automação, IA e Power BI</title>
+<meta name="description" content="Portfólio de Pablo Melo — Analista de Dados Sênior / Analytics Engineer. Pipelines de decisão com Python, visão computacional (IA), SQL, Power BI e automação (RPA) com resultados reais e mensuráveis." />
+<meta name="author" content="Pablo Melo" />
+<meta name="robots" content="index, follow" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Portfólio — Pablo Melo | Dados, Automação & Planejamento" />
-<meta property="og:description" content="Analista de Dados, Automação e Planejamento. Power BI, SQL, Python, APIs, Playwright, RPA e FP&A com resultados mensuráveis." />
+<meta property="og:title" content="Pablo Melo — Data & Analytics Engineer | Automação, IA e Power BI" />
+<meta property="og:description" content="Analista de Dados Sênior / Analytics Engineer. Pipelines de decisão com Python, IA aplicada, SQL, Power BI e automação — de estudos de caso reais a dashboards em produção." />
 <meta property="og:image" content="pablo.jpg" />
+<meta property="og:locale" content="pt_BR" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pablo Melo — Data & Analytics Engineer" />
+<meta name="twitter:description" content="Python, IA aplicada, SQL, Power BI e automação — estudos de caso reais de engenharia de dados e automação." />
+<meta name="twitter:image" content="pablo.jpg" />
 <meta name="theme-color" content="#2E86D6" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E86D6'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='16' font-weight='bold' fill='%23fff' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pablo Melo",
+  "jobTitle": "Analista de Dados Sênior / Analytics Engineer",
+  "description": "Analista de Dados e Planejamento com foco em automação, IA aplicada, Power BI e engenharia de dados.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Recife", "addressRegion": "PE", "addressCountry": "BR" },
+  "email": "mailto:pablohenriquemelo@outlook.com.br",
+  "knowsAbout": ["Python", "SQL", "Power BI", "Automação RPA", "Playwright", "FastAPI", "Visão Computacional", "Power Platform", "Engenharia de Dados"],
+  "sameAs": [
+    "https://www.linkedin.com/in/pablohnrque/",
+    "https://github.com/pablohmelo02"
+  ]
+}
+</script>
 <style>
   :root{
     --bg:#F7F9FC;
@@ -30,9 +52,10 @@
     --display:'Space Grotesk',system-ui,sans-serif;
     --body:'Inter',system-ui,sans-serif;
     --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-    --maxw:1140px;
+    --maxw:1180px;
     --pb-ink:#28324C;--pb-muted:#6B7690;--pb-blue:#33569F;--pb-blue-d:#22376B;
     --pb-blue-l:#9FB4DE;--pb-track:#E9EDF6;--pb-panel:#F5F7FC;--pb-line:#E2E7F1;
+    --dk-bg:#0B0E15;--dk-panel:#10141F;--dk-line:#212840;--dk-ink:#EDEFF5;--dk-muted:#8891A5;--dk-accent:#7FBEF5;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -47,8 +70,8 @@
   .brand{font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
   .brand .mark{width:30px;height:30px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:.8rem;font-weight:700;font-family:var(--mono)}
   .brand b{color:var(--accent-ink);font-weight:700}
-  .nav-links{display:flex;gap:28px;align-items:center}
-  .nav-links a{font-size:.9rem;color:var(--muted);font-weight:500;transition:color .2s}
+  .nav-links{display:flex;gap:24px;align-items:center}
+  .nav-links a{font-size:.88rem;color:var(--muted);font-weight:500;transition:color .2s;white-space:nowrap}
   .nav-links a:hover{color:var(--ink)}
   .nav-cta{font-family:var(--body);font-size:.85rem;font-weight:600;color:#fff;background:var(--accent);padding:9px 16px;border-radius:8px;transition:transform .15s ease,background .2s}
   .nav-cta:hover{background:var(--accent-ink);transform:translateY(-1px)}
@@ -58,8 +81,8 @@
   .hero::before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 30% 0%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse 80% 60% at 30% 0%,#000 0%,transparent 70%);opacity:.6}
   .hero .eyebrow{display:inline-flex;align-items:center;gap:9px}
   .hero .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-  h1.hero-title{font-family:var(--display);font-weight:600;letter-spacing:-.03em;line-height:.98;font-size:clamp(3rem,8.5vw,6.4rem);margin:18px 0 0}
-  .hero-sub{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:600px;margin:22px 0 0}
+  h1.hero-title{font-family:var(--display);font-weight:600;letter-spacing:-.03em;line-height:.98;font-size:clamp(2.7rem,7.5vw,5.7rem);margin:18px 0 0}
+  .hero-sub{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:640px;margin:22px 0 0}
   .hero-sub b{color:var(--ink);font-weight:600}
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;align-items:center}
   .btn{font-weight:600;font-size:.95rem;padding:13px 22px;border-radius:10px;display:inline-flex;align-items:center;gap:9px;transition:transform .15s ease,box-shadow .2s;border:1px solid transparent;cursor:pointer}
@@ -72,19 +95,23 @@
   .hero-contact a:hover{color:var(--accent-ink)}
   .hero-contact svg{width:14px;height:14px;fill:currentColor}
 
-  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:clamp(44px,7vw,72px)}
-  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px 24px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:clamp(44px,7vw,72px)}
+  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px 22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
   .kpi::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent)}
-  .kpi .label{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .kpi .val{font-family:var(--display);font-weight:600;font-size:clamp(2.2rem,5vw,3.1rem);letter-spacing:-.02em;line-height:1.05;margin-top:10px;display:flex;align-items:baseline;gap:6px}
-  .kpi .val .unit{font-size:1.3rem;color:var(--accent-ink);font-weight:500}
+  .kpi .label{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .kpi .val{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.02em;line-height:1.05;margin-top:10px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .kpi .val .unit{font-size:1.15rem;color:var(--accent-ink);font-weight:500}
   .kpi .val .arrow{color:var(--accent);font-family:var(--body)}
-  .kpi .note{font-size:.86rem;color:var(--muted);margin-top:8px}
+  .kpi .note{font-size:.84rem;color:var(--muted);margin-top:8px}
+  .impact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .impact-grid .kpi .val{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 
   section{padding:clamp(60px,9vw,110px) 0}
   .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:42px;flex-wrap:wrap}
   .sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.02em}
   .sec-head .idx{font-family:var(--mono);font-size:.8rem;color:var(--accent-ink);border:1px solid var(--accent);border-radius:6px;padding:3px 8px}
+  .sec-lead{color:var(--muted);max-width:680px;margin:-24px 0 26px;font-size:1rem}
+  .sec-lead b{color:var(--ink)}
 
   .about-grid{display:grid;grid-template-columns:220px 1.4fr 1fr;gap:40px;align-items:start}
   .about-photo{position:relative}
@@ -111,6 +138,68 @@
   .tl-item ul{list-style:none;display:flex;flex-direction:column;gap:6px}
   .tl-item li{position:relative;padding-left:18px;color:var(--muted);font-size:.95rem}
   .tl-item li::before{content:"▪";position:absolute;left:0;color:var(--accent);font-size:.7rem;top:3px}
+  .tl-stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+  .tl-stack span{font-family:var(--mono);font-size:.68rem;color:var(--accent-ink);background:var(--accent-soft);border:1px solid #CFE2F7;border-radius:6px;padding:3px 8px}
+
+  /* STACK TÉCNICA */
+  .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .skill-cat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .skill-cat h3{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:6px 11px;font-size:.85rem;font-weight:500}
+  .chip.key{border-color:var(--accent);color:var(--accent-ink)}
+
+  /* ARQUITETURA / DARK PANELS */
+  .dark-panel{background:var(--dk-bg);border:1px solid var(--dk-line);border-radius:20px;padding:clamp(26px,4vw,44px);position:relative;overflow:hidden}
+  .dark-panel::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#1a2136 1px,transparent 1px),linear-gradient(90deg,#1a2136 1px,transparent 1px);background-size:32px 32px;opacity:.4;pointer-events:none}
+  .dark-panel>*{position:relative}
+  .dark-panel + .dark-panel{margin-top:26px}
+  .dark-panel h3{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dk-accent);margin-bottom:12px}
+  .dark-panel .arch-note{color:var(--dk-muted);font-size:.92rem;margin-bottom:22px;max-width:680px}
+  .arch-wrap{overflow-x:auto;border-radius:14px}
+  .arch-wrap svg{display:block;width:100%;min-width:720px;height:auto}
+  .abox-rect{fill:#161C2C;stroke:#2A3350;stroke-width:1.5}
+  .abox-title{fill:#EDEFF5;font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:600}
+  .abox-sub{fill:#8891A5;font-family:'Inter',sans-serif;font-size:11.5px}
+  .aarrow{stroke:#3E82C9;stroke-width:2;fill:none}
+
+  /* CASE STUDIES */
+  .cs-list{display:flex;flex-direction:column;gap:16px}
+  .cs-item{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+  .cs-item summary{cursor:pointer;list-style:none;padding:26px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .cs-item summary::-webkit-details-marker{display:none}
+  .cs-summary-main{flex:1;min-width:240px}
+  .cs-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+  .cs-title{font-family:var(--display);font-weight:600;font-size:1.32rem;margin:8px 0 6px;letter-spacing:-.01em}
+  .cs-desc{color:var(--muted);font-size:.95rem;max-width:640px}
+  .cs-right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+  .cs-metric-badge{font-family:var(--display);font-weight:600;color:var(--accent-ink);font-size:1.05rem;background:var(--accent-soft);border:1px solid #CFE2F7;border-radius:10px;padding:8px 14px;white-space:nowrap}
+  .cs-chevron{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;transition:transform .25s ease;flex-shrink:0;color:var(--muted)}
+  .cs-item[open] .cs-chevron{transform:rotate(180deg);color:var(--accent-ink);border-color:var(--accent)}
+  .cs-body{padding:2px 28px 30px;border-top:1px solid var(--line)}
+  .cs-sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:22px}
+  .cs-sec h4{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .cs-sec p,.cs-sec li{color:var(--ink);font-size:.92rem}
+  .cs-sec ul{padding-left:18px}
+  .cs-sec.span2{grid-column:1/-1}
+  .cs-result{background:var(--panel);border-radius:12px;padding:16px 18px}
+  .cs-result p{font-weight:600;color:var(--accent-ink)}
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--mono);font-size:.76rem;margin-top:4px}
+  .flow span{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink)}
+  .flow i{color:var(--accent);font-style:normal}
+  .cs-body .tags{margin-top:24px}
+
+  /* ANTES x DEPOIS */
+  .ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .ba-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow)}
+  .ba-card h3{font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:16px}
+  .ba-row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .ba-row:last-child{border-bottom:0}
+  .ba-tag{font-family:var(--mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:6px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+  .ba-tag.problema{background:#FBEDE7;color:#B7461F}
+  .ba-tag.solucao{background:var(--accent-soft);color:var(--accent-ink)}
+  .ba-tag.resultado{background:#E7F5EA;color:#1F7A3D}
+  .ba-row p{font-size:.87rem;color:var(--muted)}
 
   /* DASHBOARD CAROUSEL */
   .car-lead{color:var(--muted);max-width:640px;margin:-24px 0 26px;font-size:1rem}
@@ -128,7 +217,11 @@
   .img-wrap{position:relative;background:#fff;line-height:0}
   .img-wrap img{width:100%;display:block}
   .fict{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:.68rem;font-weight:600;color:#B7461F;background:#FBEDE7;border:1px solid #F3D6CC;border-radius:6px;padding:4px 10px;box-shadow:0 2px 8px rgba(0,0,0,.12);letter-spacing:.02em;text-transform:uppercase}
-  .img-caption{font-family:var(--mono);font-size:.72rem;color:var(--pb-muted);padding:10px 14px;border-top:1px solid var(--pb-line);background:var(--pb-panel)}
+  .dash-meta{padding:12px 14px;border-top:1px solid var(--pb-line);background:var(--pb-panel)}
+  .dash-meta .dm-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+  .dash-area{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-ink);background:var(--accent-soft);border:1px solid #CFE2F7;border-radius:6px;padding:2px 8px}
+  .dash-meta p{font-family:var(--mono);font-size:.72rem;color:var(--pb-muted);line-height:1.5}
+  .dash-meta p b{color:var(--pb-ink)}
 
   .car-ctrl{display:flex;align-items:center;justify-content:space-between;margin-top:18px}
   .dots{display:flex;gap:8px}
@@ -140,31 +233,6 @@
   .car-hint{font-family:var(--mono);font-size:.68rem;color:var(--muted)}
   .areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
   .areas .ac{font-family:var(--mono);font-size:.72rem;color:var(--accent-ink);background:var(--accent-soft);border:1px solid #CFE2F7;border-radius:999px;padding:5px 12px}
-
-  .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow);transition:transform .25s ease,border-color .25s ease;display:flex;flex-direction:column}
-  .card:hover{transform:translateY(-4px);border-color:var(--accent)}
-  .card.feature{grid-column:1/-1;background:var(--ink);color:#EDEEEA;border-color:var(--ink)}
-  .card.feature .p-kicker,.card.feature .tag{color:#9BC8F2}
-  .card.feature .p-title{color:#fff}
-  .card.feature .p-desc{color:#C3C8D2}
-  .card.feature .tag{border-color:rgba(155,200,242,.3)}
-  .card.feature .p-metric{color:#7FBEF5}
-  .p-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
-  .p-title{font-family:var(--display);font-weight:600;font-size:1.35rem;margin:12px 0 10px;letter-spacing:-.01em}
-  .p-desc{color:var(--muted);font-size:.98rem;flex:1}
-  .p-metric{font-family:var(--display);font-weight:600;color:var(--accent-ink);font-size:1.05rem;margin-top:14px}
-  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-  .tag{font-family:var(--mono);font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 9px}
-  .feature-inner{display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center}
-  @media(max-width:720px){.feature-inner{grid-template-columns:1fr}}
-
-  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .skill-cat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
-  .skill-cat h3{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:14px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:6px 11px;font-size:.85rem;font-weight:500}
-  .chip.key{border-color:var(--accent);color:var(--accent-ink)}
 
   .cert-row{display:flex;flex-wrap:wrap;gap:12px}
   .cert{display:flex;align-items:center;gap:11px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-weight:500;font-size:.92rem}
@@ -192,8 +260,8 @@
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
 
-  @media(max-width:980px){.about-grid{grid-template-columns:1fr;gap:26px}.about-photo{max-width:200px}}
-  @media(max-width:900px){.proj-grid{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:980px){.about-grid{grid-template-columns:1fr;gap:26px}.about-photo{max-width:200px}.kpis{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:900px){.skill-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:640px){
     .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--surface);flex-direction:column;gap:0;padding:8px 20px 16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
     .nav-links.open{display:flex}
@@ -201,6 +269,8 @@
     .nav-links .nav-cta{margin-top:10px;text-align:center}
     .menu-btn{display:grid;place-items:center}
     .kpis{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr}
+    .cs-item summary{padding:20px}
+    .cs-body{padding:2px 20px 24px}
   }
   @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
 </style>
@@ -212,10 +282,11 @@
     <a href="#top" class="brand"><span class="mark">PM</span> Portfólio <b>Pablo Melo</b></a>
     <nav class="nav-links" id="navLinks">
       <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
+      <a href="#stack">Stack</a>
+      <a href="#arquitetura">Arquitetura</a>
       <a href="#projetos">Projetos</a>
+      <a href="#impacto">Impacto</a>
       <a href="#dashboards">Dashboards</a>
-      <a href="#skills">Skills</a>
       <a href="#contato" class="nav-cta">Falar comigo</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
@@ -226,15 +297,15 @@
 
   <section class="hero">
     <div class="wrap">
-      <span class="eyebrow reveal"><span class="dot"></span> Analista de Dados, Automa&ccedil;&atilde;o &amp; Planejamento — Recife, PE</span>
-      <h1 class="hero-title reveal">Dados que viram<br>decis&atilde;o e resultado.</h1>
-      <p class="hero-sub reveal">Transformo dados e processos em <b>ganhos mensur&aacute;veis</b> — de <b>dashboards a automa&ccedil;&atilde;o (RPA)</b> para <b>planejamento, FP&amp;A e efici&ecirc;ncia operacional</b>. Uno base em neg&oacute;cios, an&aacute;lise e tecnologia para gerar resultado e economia de or&ccedil;amento.</p>
+      <span class="eyebrow reveal"><span class="dot"></span> Analista de Dados · Analytics Engineering · Automação & IA — Recife, PE</span>
+      <h1 class="hero-title reveal">Dados que viram<br>decisão e resultado.</h1>
+      <p class="hero-sub reveal">Transformo dados e processos manuais em <b>ganhos financeiros e operacionais</b> — de painéis em Power BI a esteiras de automação (RPA) para <b>Planejamento Estratégico e Eficiência</b>. Uno conhecimento profundo em negócios, SQL e Python para entregar soluções que automatizam rotinas e geram valor.</p>
       <div class="areas reveal">
-        <span class="ac">Dados &amp; BI</span><span class="ac">Automa&ccedil;&atilde;o / RPA</span><span class="ac">Planejamento &amp; FP&amp;A</span><span class="ac">Or&ccedil;amento</span><span class="ac">Processos</span><span class="ac">Opera&ccedil;&otilde;es</span>
+        <span class="ac">Data Engineering</span><span class="ac">Automação &amp; RPA</span><span class="ac">IA Aplicada / Visão Computacional</span><span class="ac">Power BI &amp; DAX</span><span class="ac">Power Platform</span><span class="ac">FP&amp;A</span>
       </div>
       <div class="hero-actions reveal">
-        <a href="#dashboards" class="btn btn-primary">Ver dashboards &rarr;</a>
-        <a href="Curriculo_Pablo_Melo_2026.pdf" class="btn btn-ghost" download>Baixar curr&iacute;culo (PDF)</a>
+        <a href="#projetos" class="btn btn-primary">Ver estudos de caso &rarr;</a>
+        <a href="Curriculo_Pablo_Melo_2026.pdf" class="btn btn-ghost" download>Baixar currículo (PDF)</a>
       </div>
       <div class="hero-contact reveal">
         <a href="mailto:pablohenriquemelo@outlook.com.br"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg> pablohenriquemelo@outlook.com.br</a>
@@ -245,19 +316,24 @@
 
       <div class="kpis">
         <div class="kpi reveal">
-          <div class="label">Otimiza&ccedil;&atilde;o de SQL</div>
+          <div class="label">Otimização de SQL</div>
           <div class="val"><span data-count="90">0</span><span class="unit">%</span></div>
-          <div class="note">de redu&ccedil;&atilde;o no tempo de execu&ccedil;&atilde;o de consultas</div>
+          <div class="note">de redução no tempo de execução de consultas</div>
         </div>
         <div class="kpi reveal">
-          <div class="label">Autua&ccedil;&atilde;o de ve&iacute;culos</div>
+          <div class="label">Autuação de veículos</div>
           <div class="val"><span data-count="52">0</span><span class="arrow"> &rarr; </span><span data-count="98">0</span><span class="unit">%</span></div>
-          <div class="note">taxa de sucesso ap&oacute;s mapeamento e automa&ccedil;&atilde;o</div>
+          <div class="note">taxa de sucesso após robô próprio com IA</div>
         </div>
         <div class="kpi reveal">
-          <div class="label">Automa&ccedil;&atilde;o / RPA</div>
-          <div class="val"><span class="unit">+</span><span data-count="58">0</span><span class="unit">h/m&ecirc;s</span></div>
-          <div class="note">de trabalho manual eliminado por m&ecirc;s</div>
+          <div class="label">Automação / RPA</div>
+          <div class="val"><span class="unit">+</span><span data-count="58">0</span><span class="unit">h/mês</span></div>
+          <div class="note">de trabalho manual eliminado por mês</div>
+        </div>
+        <div class="kpi reveal">
+          <div class="label">Detecção de placas (IA)</div>
+          <div class="val">97,1<span class="unit">%</span><span class="arrow"> vs </span>93,6<span class="unit">%</span></div>
+          <div class="note">modelo próprio vs. genérico · validado em 344 imagens</div>
         </div>
       </div>
     </div>
@@ -272,17 +348,17 @@
           <span class="ptag">Pablo Melo</span>
         </div>
         <div class="reveal">
-          <p>Com expertise em Dados e Automa&ccedil;&atilde;o, trabalho na interse&ccedil;&atilde;o entre <b>tecnologia, planejamento e opera&ccedil;&atilde;o</b>: da extra&ccedil;&atilde;o e modelagem de dados &agrave; constru&ccedil;&atilde;o de dashboards, KPIs e modelos preditivos que apoiam decis&otilde;es, al&eacute;m de identifica&ccedil;&atilde;o de oportunidades para melhorias de processos atrav&eacute;s de automa&ccedil;&otilde;es.</p>
-          <p>Tenho forte conhecimento em <b>automa&ccedil;&atilde;o e processos</b> — desenho fluxos ponta a ponta com Python, APIs REST e Playwright para reduzir retrabalho, aumentar a confiabilidade e economizar or&ccedil;amento. Minha forma&ccedil;&atilde;o cont&aacute;bil conecta o dado ao impacto financeiro, com experi&ecirc;ncia em <b>planejamento, an&aacute;lise financeira e FP&amp;A</b>.</p>
-          <p>Tamb&eacute;m aplico <b>Intelig&ecirc;ncia Artificial em solu&ccedil;&otilde;es de neg&oacute;cio</b> — cria&ccedil;&atilde;o de agentes, integra&ccedil;&otilde;es com APIs e boas pr&aacute;ticas de <b>arquitetura e seguran&ccedil;a</b> em sistemas, trazendo mais efici&ecirc;ncia e qualidade na entrega.</p>
+          <p>Com expertise em Dados e Automação, atuo na interseção entre tecnologia, planejamento e operação: da extração e modelagem de dados (SQL) à construção de dashboards executivos (Power BI) e modelos preditivos que apoiam decisões da diretoria, além de liderar a identificação de oportunidades para melhoria de processos através de automações.</p>
+          <p>Tenho forte domínio em automação e processos — desenho fluxos end-to-end com Python, RPA (Power Automate, Playwright) e integrações via APIs REST para reduzir o retrabalho, mitigar falhas e economizar horas operacionais. Minha bagagem contábil e bancária conecta o dado diretamente ao impacto financeiro, com sólida experiência em planejamento, análise de crédito, rentabilidade e regras de negócio complexas.</p>
+          <p>Também desenvolvo soluções avançadas para o negócio — como a criação de robôs proprietários, integração de sistemas e aplicação de boas práticas de arquitetura de dados e segurança da informação, garantindo não apenas eficiência e redução de custos, mas qualidade e escalabilidade nas entregas.</p>
         </div>
         <div class="facts reveal">
           <div class="fact"><span class="k">Cargo</span><span class="v">Analista de Dados (PL)</span></div>
           <div class="fact"><span class="k">Base</span><span class="v">Recife, PE</span></div>
-          <div class="fact"><span class="k">Atua&ccedil;&atilde;o</span><span class="v">Dados · Automa&ccedil;&atilde;o · Planejamento</span></div>
+          <div class="fact"><span class="k">Atuação</span><span class="v">Dados · Automação · IA aplicada</span></div>
           <div class="fact"><span class="k">Stack core</span><span class="v">Python · SQL · Power BI</span></div>
-          <div class="fact"><span class="k">Forma&ccedil;&atilde;o</span><span class="v">Ci&ecirc;ncias Cont&aacute;beis</span></div>
-          <div class="fact"><span class="k">Idiomas</span><span class="v">Portugu&ecirc;s · Ingl&ecirc;s (t&eacute;cnico)</span></div>
+          <div class="fact"><span class="k">Formação</span><span class="v">Ciências Contábeis</span></div>
+          <div class="fact"><span class="k">Idiomas</span><span class="v">Português · Inglês (técnico)</span></div>
         </div>
       </div>
     </div>
@@ -290,52 +366,209 @@
 
   <section id="experiencia">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">02</span><h2>Experi&ecirc;ncia</h2></div>
+      <div class="sec-head reveal"><span class="idx">02</span><h2>Linha do tempo</h2></div>
+      <p class="sec-lead reveal">Não é só progressão de cargo — é evolução de stack: de macro/Power Query em rotina contábil até pipelines de visão computacional e motores de regras em produção.</p>
       <div class="tl">
         <div class="tl-item now reveal">
           <div class="tl-date">Out 2025 · Atual</div>
           <div class="tl-role">Analista de Dados e Planejamento (PL)</div>
-          <div class="tl-org">Monte Rodovias / Austra Vias · <span>Concession&aacute;ria rodovi&aacute;ria</span></div>
+          <div class="tl-org">Monte Rodovias / Austra Vias · <span>Concessionária rodoviária</span></div>
           <ul>
-            <li>Focal de dados do setor; consolida&ccedil;&atilde;o e padroniza&ccedil;&atilde;o de bases de m&uacute;ltiplas fontes.</li>
-            <li>Dashboards gerenciais (Power BI) e KPIs para efici&ecirc;ncia de pistas e pra&ccedil;as.</li>
-            <li>Automa&ccedil;&atilde;o de rotinas com Python, APIs, Playwright e RPA (Power Automate).</li>
-            <li>Modelos preditivos de evas&atilde;o e sazonalidade para mitigar perdas.</li>
-            <li>Reestrutura&ccedil;&atilde;o do processo de Ajuste de Caixa: migra&ccedil;&atilde;o de planilhas sobrecarregadas para uma solu&ccedil;&atilde;o integrada com Power Apps, Power Automate e SharePoint, eliminando processamento manual.</li>
+            <li>Focal de dados do setor; consolidação e padronização de bases de múltiplas fontes.</li>
+            <li>Dashboards gerenciais (Power BI) e KPIs para eficiência de pistas e praças.</li>
+            <li>Robôs próprios de automação com Python, visão computacional (OCR/IA), APIs REST e Playwright — substituindo dependência de fornecedor terceirizado.</li>
+            <li>Modelos preditivos de evasão e sazonalidade para mitigar perdas.</li>
+            <li>Reestruturação do processo de Ajuste de Caixa: migração de planilhas sobrecarregadas para uma solução integrada com Power Apps, Power Automate e SharePoint.</li>
+            <li>Gestão e sustentação de ambiente RPA (filas, orquestrador, robôs em produção) e suporte analítico às áreas de CCA, CCT, CCO e Operações.</li>
           </ul>
+          <div class="tl-stack"><span>Python</span><span>FastAPI</span><span>ONNX / YOLO</span><span>SQL Server</span><span>Playwright</span><span>Power Platform</span></div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-date">Nov 2023 · Set 2025</div>
-          <div class="tl-role">Analista de Neg&oacute;cios (JR &rarr; PL &rarr; SR)</div>
-          <div class="tl-org">Bradesco · <span>Progress&atilde;o de carreira at&eacute; o segmento Prime</span></div>
+          <div class="tl-role">Analista de Negócios (JR &rarr; PL &rarr; SR)</div>
+          <div class="tl-org">Bradesco · <span>Progressão de carreira até o segmento Prime</span></div>
           <ul>
-            <li>Otimiza&ccedil;&atilde;o de portf&oacute;lios com an&aacute;lise de dados e estrat&eacute;gias personalizadas.</li>
-            <li>Relat&oacute;rios e dashboards anal&iacute;ticos para a lideran&ccedil;a; gest&atilde;o &aacute;gil (Kanban).</li>
+            <li>Otimização de portfólios com análise de dados e estratégias personalizadas.</li>
+            <li>Relatórios e dashboards analíticos para a liderança; gestão ágil (Kanban).</li>
           </ul>
+          <div class="tl-stack"><span>Excel/BI analítico</span><span>Kanban</span></div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-date">Abr 2023 · Nov 2023</div>
           <div class="tl-role">Analista Financeiro / Tesouraria</div>
           <div class="tl-org">Mundo do Cabeleireiro</div>
           <ul>
-            <li>RPA para envio automatizado de faturas; concilia&ccedil;&atilde;o banc&aacute;ria e KPIs financeiros.</li>
+            <li>RPA para envio automatizado de faturas; conciliação bancária e KPIs financeiros.</li>
           </ul>
+          <div class="tl-stack"><span>RPA</span><span>TOTVS Winthor</span></div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-date">Out 2022 · Mar 2023</div>
-          <div class="tl-role">Est&aacute;gio Cont&aacute;bil e Fiscal</div>
+          <div class="tl-role">Estágio Contábil e Fiscal</div>
           <div class="tl-org">Mendesca</div>
           <ul>
-            <li>Concilia&ccedil;&atilde;o, apura&ccedil;&atilde;o de tributos e automa&ccedil;&atilde;o de rotinas com Power Query e macros.</li>
+            <li>Conciliação, apuração de tributos e automação de rotinas com Power Query e macros.</li>
           </ul>
+          <div class="tl-stack"><span>Power Query</span><span>Macros</span><span>Power Pivot</span></div>
         </div>
         <div class="tl-item reveal">
           <div class="tl-date">Out 2021 · Set 2022</div>
-          <div class="tl-role">Aprendiz — Pagamento de Benef&iacute;cios</div>
+          <div class="tl-role">Aprendiz — Pagamento de Benefícios</div>
           <div class="tl-org">RPL Engenharia</div>
           <ul>
             <li>Planilhas automatizadas de elegibilidade e faturamento para +3.000 colaboradores.</li>
           </ul>
+          <div class="tl-stack"><span>Excel avançado</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="idx">03</span><h2>Stack técnica</h2></div>
+      <p class="sec-lead reveal">Organizada por categoria — o que uso de fato nos projetos em produção, não uma lista genérica de palavras-chave.</p>
+      <div class="skill-grid">
+        <div class="skill-cat reveal"><h3>Linguagens</h3><div class="chips"><span class="chip key">Python</span><span class="chip">SQL (T-SQL)</span><span class="chip">JavaScript</span></div></div>
+        <div class="skill-cat reveal"><h3>Banco de Dados</h3><div class="chips"><span class="chip key">SQL Server</span><span class="chip">SQLite</span><span class="chip">MySQL</span><span class="chip">Modelagem (DDL)</span></div></div>
+        <div class="skill-cat reveal"><h3>Business Intelligence</h3><div class="chips"><span class="chip key">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span><span class="chip">Microsoft Fabric</span></div></div>
+        <div class="skill-cat reveal"><h3>Automação &amp; RPA</h3><div class="chips"><span class="chip key">Playwright</span><span class="chip">Power Automate</span><span class="chip">UiPath</span><span class="chip">Blue Prism</span><span class="chip">Selenium</span></div></div>
+        <div class="skill-cat reveal"><h3>Power Platform</h3><div class="chips"><span class="chip key">Power Apps</span><span class="chip">Power Automate</span><span class="chip">SharePoint</span><span class="chip">Power BI Service</span></div></div>
+        <div class="skill-cat reveal"><h3>Cloud</h3><div class="chips"><span class="chip">Microsoft Fabric</span><span class="chip">SharePoint Online / OneDrive</span><span class="chip">Power BI Service</span></div></div>
+        <div class="skill-cat reveal"><h3>Versionamento</h3><div class="chips"><span class="chip key">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span></div></div>
+        <div class="skill-cat reveal"><h3>Integrações</h3><div class="chips"><span class="chip key">APIs REST</span><span class="chip">Engenharia reversa de sistemas legados</span><span class="chip">SAP S/4HANA</span><span class="chip">TOTVS (Winthor)</span><span class="chip">Webhooks (Telegram/E-mail/Teams)</span></div></div>
+        <div class="skill-cat reveal"><h3>IA &amp; Visão Computacional</h3><div class="chips"><span class="chip key">YOLO / ONNX Runtime</span><span class="chip">OCR</span><span class="chip">OpenCV</span><span class="chip">Modelos fine-tuned próprios</span><span class="chip">Detecção de anomalias</span></div></div>
+        <div class="skill-cat reveal"><h3>Frameworks</h3><div class="chips"><span class="chip key">FastAPI</span><span class="chip">Pydantic</span><span class="chip">SQLAlchemy</span><span class="chip">APScheduler</span><span class="chip">pytest</span></div></div>
+      </div>
+
+      <div class="sec-head reveal" style="margin-top:60px"><span class="idx">04</span><h2>Certificações</h2></div>
+      <div class="cert-row reveal">
+        <div class="cert"><span class="c-ic">&#9670;</span> CEA — ANBIMA</div>
+        <div class="cert"><span class="c-ic">&#9670;</span> Power BI — BI &amp; Data Science</div>
+        <div class="cert"><span class="c-ic">&#9670;</span> DevOps — Rocketseat</div>
+        <div class="cert"><span class="c-ic">&#9670;</span> Fundamentos em Python (Pandas/PySpark)</div>
+        <div class="cert"><span class="c-ic">&#9670;</span> Formação em Liderança</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arquitetura">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="idx">05</span><h2>Arquitetura das soluções</h2></div>
+      <p class="sec-lead reveal">Como os dados realmente fluem, da fonte até a decisão do usuário — em dois níveis: o macro-fluxo da minha stack, e o pipeline de decisão automatizada de um robô específico.</p>
+
+      <div class="dark-panel reveal">
+        <h3>Fluxo macro — de sistemas de origem à decisão de negócio</h3>
+        <p class="arch-note">Do dado disperso em ERPs, sistemas legados e portais até a interface que o usuário final realmente usa para decidir.</p>
+        <div class="arch-wrap">
+          <svg viewBox="0 0 1680 240" role="img" aria-label="Fluxo: Sistemas de Origem para Python, SQL Server/SQLite, Power BI, Power Automate, Power Apps e Usuário">
+            <defs>
+              <marker id="arrowhead-macro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#3E82C9" />
+              </marker>
+            </defs>
+            <!-- boxes: x = 20 + i*240, width 200, y 75, height 90 -->
+            <g>
+              <rect class="abox-rect" x="20" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="120" y="112" text-anchor="middle">Sistemas de</text>
+              <text class="abox-title" x="120" y="130" text-anchor="middle">Origem</text>
+              <text class="abox-sub" x="120" y="148" text-anchor="middle">ERP, legado, portais</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="260" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="360" y="120" text-anchor="middle">Python</text>
+              <text class="abox-sub" x="360" y="140" text-anchor="middle">ETL &amp; robôs</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="500" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="600" y="112" text-anchor="middle">SQL Server</text>
+              <text class="abox-title" x="600" y="130" text-anchor="middle">/ SQLite</text>
+              <text class="abox-sub" x="600" y="148" text-anchor="middle">persistência &amp; auditoria</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="740" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="840" y="112" text-anchor="middle">Power BI</text>
+              <text class="abox-sub" x="840" y="130" text-anchor="middle">análise &amp; KPIs</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="980" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="1080" y="112" text-anchor="middle">Power</text>
+              <text class="abox-title" x="1080" y="130" text-anchor="middle">Automate</text>
+              <text class="abox-sub" x="1080" y="148" text-anchor="middle">orquestração</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="1220" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="1320" y="112" text-anchor="middle">Power</text>
+              <text class="abox-title" x="1320" y="130" text-anchor="middle">Apps</text>
+              <text class="abox-sub" x="1320" y="148" text-anchor="middle">interface</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="1460" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="1560" y="112" text-anchor="middle">Usuário</text>
+              <text class="abox-sub" x="1560" y="130" text-anchor="middle">decisão de</text>
+              <text class="abox-sub" x="1560" y="146" text-anchor="middle">negócio</text>
+            </g>
+            <line class="aarrow" x1="220" y1="120" x2="256" y2="120" marker-end="url(#arrowhead-macro)"/>
+            <line class="aarrow" x1="460" y1="120" x2="496" y2="120" marker-end="url(#arrowhead-macro)"/>
+            <line class="aarrow" x1="700" y1="120" x2="736" y2="120" marker-end="url(#arrowhead-macro)"/>
+            <line class="aarrow" x1="940" y1="120" x2="976" y2="120" marker-end="url(#arrowhead-macro)"/>
+            <line class="aarrow" x1="1180" y1="120" x2="1216" y2="120" marker-end="url(#arrowhead-macro)"/>
+            <line class="aarrow" x1="1420" y1="120" x2="1456" y2="120" marker-end="url(#arrowhead-macro)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="dark-panel reveal">
+        <h3>Pipeline de decisão — robô de autuação de veículos</h3>
+        <p class="arch-note">O fluxo real por trás do case de maior impacto: da consulta ao banco até a auditoria completa de cada decisão automatizada.</p>
+        <div class="arch-wrap">
+          <svg viewBox="0 0 1440 240" role="img" aria-label="Pipeline: SQL Server, Fotos e OCR, Motor de Regras, Ação no Sistema, Auditoria, Painel FastAPI">
+            <defs>
+              <marker id="arrowhead-pipe" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#3E82C9" />
+              </marker>
+            </defs>
+            <g>
+              <rect class="abox-rect" x="20" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="120" y="120" text-anchor="middle">SQL Server</text>
+              <text class="abox-sub" x="120" y="140" text-anchor="middle">trânsitos do dia</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="260" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="360" y="112" text-anchor="middle">Fotos + OCR</text>
+              <text class="abox-sub" x="360" y="130" text-anchor="middle">visão computacional</text>
+              <text class="abox-sub" x="360" y="146" text-anchor="middle">(YOLO + OCR ONNX)</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="500" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="600" y="112" text-anchor="middle">Motor de</text>
+              <text class="abox-title" x="600" y="130" text-anchor="middle">Regras</text>
+              <text class="abox-sub" x="600" y="148" text-anchor="middle">decisão pura, testável</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="740" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="840" y="112" text-anchor="middle">Ação no</text>
+              <text class="abox-title" x="840" y="130" text-anchor="middle">Sistema</text>
+              <text class="abox-sub" x="840" y="148" text-anchor="middle">ou fila manual</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="980" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="1080" y="112" text-anchor="middle">Auditoria</text>
+              <text class="abox-sub" x="1080" y="130" text-anchor="middle">SQLite</text>
+              <text class="abox-sub" x="1080" y="146" text-anchor="middle">toda ação registrada</text>
+            </g>
+            <g>
+              <rect class="abox-rect" x="1220" y="75" width="200" height="90" rx="12"/>
+              <text class="abox-title" x="1320" y="112" text-anchor="middle">Painel</text>
+              <text class="abox-title" x="1320" y="130" text-anchor="middle">FastAPI</text>
+              <text class="abox-sub" x="1320" y="148" text-anchor="middle">acompanhamento</text>
+            </g>
+            <line class="aarrow" x1="220" y1="120" x2="256" y2="120" marker-end="url(#arrowhead-pipe)"/>
+            <line class="aarrow" x1="460" y1="120" x2="496" y2="120" marker-end="url(#arrowhead-pipe)"/>
+            <line class="aarrow" x1="700" y1="120" x2="736" y2="120" marker-end="url(#arrowhead-pipe)"/>
+            <line class="aarrow" x1="940" y1="120" x2="976" y2="120" marker-end="url(#arrowhead-pipe)"/>
+            <line class="aarrow" x1="1180" y1="120" x2="1216" y2="120" marker-end="url(#arrowhead-pipe)"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -343,115 +576,308 @@
 
   <section id="projetos">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">03</span><h2>Projetos em destaque</h2></div>
-      <div class="proj-grid">
+      <div class="sec-head reveal"><span class="idx">06</span><h2>Projetos em destaque</h2></div>
+      <p class="sec-lead reveal">Estudos de caso reais — clique em cada um para ver contexto, arquitetura, desafios e resultado completos.</p>
 
-        <article class="card feature reveal">
-          <div class="feature-inner">
-            <div>
-              <div class="p-kicker">Destaque · Iniciativa pr&oacute;pria · Economia de or&ccedil;amento</div>
-              <h3 class="p-title">Rob&ocirc; Pr&oacute;prio de Autua&ccedil;&atilde;o de Ve&iacute;culos</h3>
-              <p class="p-desc">O processo dependia do rob&ocirc; de uma empresa terceirizada. Por <b style="color:#fff">iniciativa pr&oacute;pria</b>, desenvolvi o rob&ocirc; pr&oacute;prio da concess&atilde;o, com regras de neg&oacute;cio sob medida — mais efetivo, sem depend&ecirc;ncia externa e podendo gerar <b style="color:#fff">economia direta no or&ccedil;amento</b> ao eliminar o custo do fornecedor.</p>
-              <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">APIs REST</span><span class="tag">FastAPI</span><span class="tag">Regras de neg&oacute;cio</span><span class="tag">Arquitetura &amp; Seguran&ccedil;a</span></div>
+      <div class="cs-list">
+
+        <details class="cs-item reveal" open>
+          <summary>
+            <div class="cs-summary-main">
+              <div class="cs-kicker">Destaque · Iniciativa própria · IA aplicada</div>
+              <h3 class="cs-title">Robô Próprio de Autuação de Veículos</h3>
+              <p class="cs-desc">Pipeline de visão computacional e motor de regras que substituiu um robô terceirizado, elevando a taxa de sucesso e eliminando o custo do fornecedor externo.</p>
             </div>
-            <div>
-              <div class="p-kicker">Impacto</div>
-              <div class="p-metric" style="font-size:1.9rem;margin-top:8px">52% &rarr; 98%</div>
-              <p class="p-desc" style="margin-top:6px">taxa de sucesso · economia de or&ccedil;amento (fim do custo terceirizado) e mais efetividade</p>
+            <div class="cs-right">
+              <span class="cs-metric-badge">52% &rarr; 98%</span>
+              <span class="cs-chevron">&#9660;</span>
             </div>
+          </summary>
+          <div class="cs-body">
+            <div class="cs-sections">
+              <div class="cs-sec"><h4>Contexto</h4><p>O processo de autuação de veículos por evasão de pedágio dependia do robô de uma empresa terceirizada, com regras genéricas e pouco controle sobre o comportamento do sistema.</p></div>
+              <div class="cs-sec"><h4>Problema</h4><p>Taxa de sucesso de apenas 52%, custo recorrente de fornecedor externo e nenhuma visibilidade sobre por que um trânsito era ou não autuado corretamente.</p></div>
+              <div class="cs-sec"><h4>Solução</h4><p>Construí um robô próprio do zero: pipeline de visão computacional para ler a placa na foto do trânsito, um motor de regras de decisão em cascata (5 passos determinísticos) e integração direta com o sistema legado da concessão.</p></div>
+              <div class="cs-sec span2">
+                <h4>Arquitetura</h4>
+                <div class="flow">
+                  <span>SQL Server</span><i>&rarr;</i><span>Fotos</span><i>&rarr;</i><span>OCR / Visão Computacional (ONNX)</span><i>&rarr;</i><span>Motor de Regras (5 passos)</span><i>&rarr;</i><span>Ação no sistema legado / fila manual</span><i>&rarr;</i><span>Auditoria SQLite</span><i>&rarr;</i><span>Painel FastAPI</span>
+                </div>
+              </div>
+              <div class="cs-sec">
+                <h4>Desafios &amp; soluções</h4>
+                <ul>
+                  <li>OCR em condições adversas (fotos noturnas, ângulos ruins) → múltiplas variantes de imagem processadas até a primeira leitura confiável.</li>
+                  <li>Múltiplos veículos na mesma foto → cruzamento de detector de veículo + detector de placa para achar o par correto.</li>
+                  <li>Ambiente Windows sem suporte a paths longos impedia instalar Torch/Ultralytics nativamente → contornado usando modelos convertidos para ONNX Runtime.</li>
+                  <li>Sistema legado não suporta sessões simultâneas → login escalonado entre workers para evitar quedas de conexão.</li>
+                </ul>
+              </div>
+              <div class="cs-sec cs-result span2">
+                <h4>Resultado</h4>
+                <p>Taxa de sucesso de 52% para 98%. Detector de placas fine-tuned próprio validado em 344 imagens: 97,1% de detecção contra 93,6% do modelo genérico (15 casos recuperados / 3 perdidos). Auditoria completa de toda decisão automatizada, com painel web de acompanhamento.</p>
+              </div>
+              <div class="cs-sec span2"><h4>Aprendizados</h4><p>Separar decisão (regras puras e testáveis) de execução torna bugs de lógica fáceis de achar — não uma caixa-preta. Todo sistema que age em produção precisa de um "modo teste" ligado por padrão antes de qualquer escrita real.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">ONNX Runtime / YOLO</span><span class="tag">OCR</span><span class="tag">OpenCV</span><span class="tag">SQL Server</span><span class="tag">SQLite</span><span class="tag">APScheduler</span><span class="tag">pytest</span></div>
           </div>
-        </article>
+        </details>
 
-        <article class="card reveal">
-          <div class="p-kicker">Automa&ccedil;&atilde;o + regras</div>
-          <h3 class="p-title">Rotina de Valida&ccedil;&atilde;o de Autua&ccedil;&atilde;o</h3>
-          <p class="p-desc">Rob&ocirc; com regras de neg&oacute;cio complexas que valida e trata os tr&acirc;nsitos automaticamente. O que levava quase duas horas manualmente passou a rodar em 20 minutos, sem erro humano.</p>
-          <div class="p-metric">~1h45 &rarr; 20 min · +200 tr&acirc;nsitos (&asymp; 5x)</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Regras</span><span class="tag">SQL</span><span class="tag">Dashboard Web</span></div>
-        </article>
+        <details class="cs-item reveal">
+          <summary>
+            <div class="cs-summary-main">
+              <div class="cs-kicker">Auditoria &amp; governança de decisão</div>
+              <h3 class="cs-title">Rotina de Validação de Autuação</h3>
+              <p class="cs-desc">Robô de auditoria somente-leitura que cruza imagens, dados de passagem e cadastro antes da autuação — nunca decide sozinho o caso final.</p>
+            </div>
+            <div class="cs-right">
+              <span class="cs-metric-badge">~1h45 &rarr; 20 min</span>
+              <span class="cs-chevron">&#9660;</span>
+            </div>
+          </summary>
+          <div class="cs-body">
+            <div class="cs-sections">
+              <div class="cs-sec"><h4>Contexto</h4><p>Trânsitos marcados como "violação" precisavam de triagem manual antes de virarem autuação — checando isenções, TAG liberada e pagamentos duplicados.</p></div>
+              <div class="cs-sec"><h4>Problema</h4><p>Triagem manual levava quase duas horas por rodada e carregava risco real de autuar um trânsito com justificativa legítima não identificada a tempo.</p></div>
+              <div class="cs-sec"><h4>Solução</h4><p>Motor de decisão com árvore de 5 passos em ordem fixa (duplicidade → exceção de integração → isenção → TAG liberada → candidato real a evasão), que nunca grava a decisão final sozinho — casos sem exceção clara vão para fila humana.</p></div>
+              <div class="cs-sec span2">
+                <h4>Arquitetura</h4>
+                <div class="flow">
+                  <span>Consulta de violações (SQL Server)</span><i>&rarr;</i><span>Dados completos do trânsito</span><i>&rarr;</i><span>OCR próprio (múltiplas variantes de imagem)</span><i>&rarr;</i><span>Árvore de decisão (5 passos)</span><i>&rarr;</i><span>Auditoria total (SQLite)</span>
+                </div>
+              </div>
+              <div class="cs-sec">
+                <h4>Desafios &amp; soluções</h4>
+                <ul>
+                  <li>Confusão de caracteres do OCR (0/O, S/5) → correção posicional baseada no formato conhecido de placa.</li>
+                  <li>TAG liberada não é garantia de pagamento → trava cruzando status de mensageria com leitura de antena.</li>
+                  <li><b>Bug identificado e corrigido em produção:</b> uma regra genérica de "pagamento próximo, qualquer sentido" causou 5 cancelamentos incorretos — substituída por regra estrita (mesma praça e mesmo sentido).</li>
+                </ul>
+              </div>
+              <div class="cs-sec cs-result span2">
+                <h4>Resultado</h4>
+                <p>Tempo de validação caiu de ~1h45 manuais para 20 minutos automatizados, processando mais de 200 trânsitos por rodada (~5x o volume) sem erro humano — com painel de acompanhamento do % de validação por praça e por pista.</p>
+              </div>
+              <div class="cs-sec span2"><h4>Aprendizados</h4><p>Auditoria total (toda ação e toda chamada registrada) foi o que permitiu achar e corrigir o bug de regra em produção rapidamente. Regra "genérica demais" é o maior risco em automação de decisão.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Regras de negócio</span><span class="tag">SQL Server</span><span class="tag">SQLite</span><span class="tag">OCR / IA</span><span class="tag">Power BI</span><span class="tag">pytest</span></div>
+          </div>
+        </details>
 
-        <article class="card reveal">
-          <div class="p-kicker">Recupera&ccedil;&atilde;o de receita</div>
-          <h3 class="p-title">Recupera&ccedil;&atilde;o de Pagamentos por TAG</h3>
-          <p class="p-desc">Rotina que identifica e recupera tr&acirc;nsitos cujo pagamento por TAG foi perdido, reprocessando a cobran&ccedil;a e devolvendo receita que ficaria sem arrecadar.</p>
-          <div class="p-metric">Receita recuperada m&ecirc;s a m&ecirc;s</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">APIs</span><span class="tag">RPA</span><span class="tag">SQL</span></div>
-        </article>
+        <details class="cs-item reveal">
+          <summary>
+            <div class="cs-summary-main">
+              <div class="cs-kicker">Recuperação de receita</div>
+              <h3 class="cs-title">Recuperação de Pagamentos por TAG &amp; Marcação de Evasão</h3>
+              <p class="cs-desc">Dois robôs desacoplados que reprocessam trânsitos presos entre status de pagamento em um sistema legado sem API documentada.</p>
+            </div>
+            <div class="cs-right">
+              <span class="cs-metric-badge">Receita recuperada</span>
+              <span class="cs-chevron">&#9660;</span>
+            </div>
+          </summary>
+          <div class="cs-body">
+            <div class="cs-sections">
+              <div class="cs-sec"><h4>Contexto</h4><p>Trânsitos cujo pagamento por TAG foi perdido, ou que ficaram presos entre status de pagamento, dependiam de reprocessamento manual dentro do sistema legado de gestão de pedágio.</p></div>
+              <div class="cs-sec"><h4>Problema</h4><p>Receita não arrecadada por falha de pagamento não identificada, e trânsitos travados sem reprocessamento automático — além de uma API legada (ASP.NET WebForms) sem documentação alguma.</p></div>
+              <div class="cs-sec"><h4>Solução</h4><p>Reescrevi um robô que originalmente dependia de navegador (Playwright) para chamadas HTTP diretas — com scripts de diagnóstico dedicados para engenharia reversa do payload da API antes de codificar qualquer regra de negócio.</p></div>
+              <div class="cs-sec span2">
+                <h4>Arquitetura</h4>
+                <div class="flow">
+                  <span>SQL Server (fila elegível)</span><i>&rarr;</i><span>Worker pool (login escalonado)</span><i>&rarr;</i><span>Cliente HTTP próprio</span><i>&rarr;</i><span>Ação idempotente ou não</span><i>&rarr;</i><span>Fila de correção</span>
+                </div>
+              </div>
+              <div class="cs-sec">
+                <h4>Desafios &amp; soluções</h4>
+                <ul>
+                  <li>API sem documentação → script de diagnóstico dedicado para descobrir formato real de campos e respostas.</li>
+                  <li>Sessões instáveis sob concorrência → login escalonado entre workers (delay progressivo).</li>
+                  <li>Risco de duplicar uma ação de escrita → retry diferenciado por tipo de timeout (conexão vs. leitura).</li>
+                </ul>
+              </div>
+              <div class="cs-sec cs-result span2">
+                <h4>Resultado</h4>
+                <p>Reprocessamento manual substituído por rotina automática e auditável, com trava de execução em arquivo e modo teste centralizado antes de qualquer ação em produção.</p>
+              </div>
+              <div class="cs-sec span2"><h4>Aprendizados</h4><p>Nem todo retry é seguro — a diferença entre timeout de conexão e timeout de leitura decide se um retry duplica uma cobrança ou uma autuação.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">APIs REST</span><span class="tag">Engenharia reversa</span><span class="tag">threading</span><span class="tag">SQL Server</span></div>
+          </div>
+        </details>
 
-        <article class="card reveal">
-          <div class="p-kicker">Efici&ecirc;ncia</div>
-          <h3 class="p-title">Extra&ccedil;&atilde;o Autom&aacute;tica de Relat&oacute;rios</h3>
-          <p class="p-desc">Automa&ccedil;&atilde;o que gera, baixa e distribui relat&oacute;rios recorrentes direto das fontes, eliminando a extra&ccedil;&atilde;o manual e padronizando a entrega.</p>
-          <div class="p-metric">Trabalho manual eliminado</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Power Automate</span><span class="tag">APIs</span><span class="tag">Excel</span></div>
-        </article>
+        <details class="cs-item reveal">
+          <summary>
+            <div class="cs-summary-main">
+              <div class="cs-kicker">Eficiência operacional</div>
+              <h3 class="cs-title">Extração Automática de Relatórios Mensais</h3>
+              <p class="cs-desc">Automação com navegadores em paralelo que gera, baixa e entrega relatórios recorrentes direto no SharePoint corporativo.</p>
+            </div>
+            <div class="cs-right">
+              <span class="cs-metric-badge">~7 min / rodada</span>
+              <span class="cs-chevron">&#9660;</span>
+            </div>
+          </summary>
+          <div class="cs-body">
+            <div class="cs-sections">
+              <div class="cs-sec"><h4>Contexto</h4><p>Relatórios mensais recorrentes de tráfego e receita (como o Relatório Mensal de Tráfego/VEP) dependiam de extração manual em portal legado, para múltiplas praças e tipos de relatório.</p></div>
+              <div class="cs-sec"><h4>Problema</h4><p>Processo repetitivo e demorado, sujeito a atraso e erro humano, repetido todo mês para cada concessão e cada variação de relatório.</p></div>
+              <div class="cs-sec"><h4>Solução</h4><p>Automação com Playwright rodando múltiplas instâncias de navegador em paralelo (uma por relatório), com captura resiliente de download e entrega automática no SharePoint/OneDrive corporativo, sempre no horário certo.</p></div>
+              <div class="cs-sec span2">
+                <h4>Arquitetura</h4>
+                <div class="flow">
+                  <span>Agendamento mensal</span><i>&rarr;</i><span>N threads paralelas (navegador isolado)</span><i>&rarr;</i><span>Login + filtros do relatório</span><i>&rarr;</i><span>Captura do arquivo (evento nativo + fallback de rede)</span><i>&rarr;</i><span>Validação</span><i>&rarr;</i><span>SharePoint / OneDrive</span>
+                </div>
+              </div>
+              <div class="cs-sec">
+                <h4>Desafios &amp; soluções</h4>
+                <ul>
+                  <li>Portal sem API pública → seletores de UI com retry defensivo (scroll + clique forçado em dropdowns).</li>
+                  <li>6-8 navegadores logando no mesmo sistema simultaneamente → atraso escalonado entre aberturas.</li>
+                  <li>Download sem evento nativo do navegador → fallback por interceptação de resposta de rede.</li>
+                  <li>Timeout duplo (máximo absoluto + ociosidade) para nunca travar indefinidamente esperando o sistema fonte processar.</li>
+                </ul>
+              </div>
+              <div class="cs-sec cs-result span2">
+                <h4>Resultado</h4>
+                <p>Execuções reais documentadas em log: 8 instâncias em paralelo processadas em 7min25s (7 de 8 relatórios OK); 6 instâncias em paralelo em 6min31s (6 de 6 OK) — trabalho manual eliminado, com entrega no horário certo todo mês.</p>
+              </div>
+              <div class="cs-sec span2"><h4>Aprendizados</h4><p>Paralelismo com escalonamento de início evita derrubar sistemas legados. Timeout duplo é essencial quando não se controla o comportamento do backend.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">threading</span><span class="tag">SharePoint</span><span class="tag">Excel</span></div>
+          </div>
+        </details>
 
-        <article class="card reveal">
-          <div class="p-kicker">Power Platform &middot; Governan&ccedil;a</div>
-          <h3 class="p-title">Automa&ccedil;&atilde;o de Ajustes de Caixa</h3>
-          <p class="p-desc">Substitui&ccedil;&atilde;o de um processo cr&iacute;tico baseado em planilhas lentas por uma arquitetura segura. Desenvolvi um aplicativo de aprova&ccedil;&atilde;o no Power Apps para a supervis&atilde;o, governan&ccedil;a em listas do SharePoint e fluxos no Power Automate para execu&ccedil;&atilde;o aut&ocirc;noma das regras de neg&oacute;cio.</p>
-          <div class="p-metric">100% Audit&aacute;vel &middot; Zero interven&ccedil;&atilde;o humana</div>
-          <div class="tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">SharePoint</span><span class="tag">Regras de neg&oacute;cio</span></div>
-        </article>
+        <details class="cs-item reveal">
+          <summary>
+            <div class="cs-summary-main">
+              <div class="cs-kicker">Power Platform · Governança</div>
+              <h3 class="cs-title">Automação de Ajustes de Caixa</h3>
+              <p class="cs-desc">Substituição de um processo crítico baseado em planilhas lentas por uma arquitetura de aprovação segura e 100% rastreável.</p>
+            </div>
+            <div class="cs-right">
+              <span class="cs-metric-badge">100% auditável</span>
+              <span class="cs-chevron">&#9660;</span>
+            </div>
+          </summary>
+          <div class="cs-body">
+            <div class="cs-sections">
+              <div class="cs-sec"><h4>Contexto</h4><p>O processo de aprovação de ajuste de caixa rodava em planilhas sobrecarregadas, sem rastreabilidade formal do fluxo de aprovação.</p></div>
+              <div class="cs-sec"><h4>Problema</h4><p>Lentidão, dependência de intervenção manual em cada etapa e falta de governança sobre quem aprovou o quê e quando.</p></div>
+              <div class="cs-sec"><h4>Solução</h4><p>Desenvolvi um aplicativo de aprovação em Power Apps para a supervisão, com governança em listas do SharePoint e fluxos no Power Automate executando as regras de negócio de forma autônoma.</p></div>
+              <div class="cs-sec span2">
+                <h4>Arquitetura</h4>
+                <div class="flow">
+                  <span>Power Apps (solicitação/aprovação)</span><i>&rarr;</i><span>SharePoint (governança &amp; histórico)</span><i>&rarr;</i><span>Power Automate (execução das regras)</span><i>&rarr;</i><span>Registro auditável</span>
+                </div>
+              </div>
+              <div class="cs-sec"><h4>Desafios &amp; soluções</h4><p>Migrar um processo crítico de planilha para Power Platform sem perder nenhuma regra de negócio existente, mantendo rastreabilidade total do fluxo de aprovação.</p></div>
+              <div class="cs-sec cs-result span2"><h4>Resultado</h4><p>Processo 100% auditável, com zero intervenção humana na execução das regras de negócio.</p></div>
+              <div class="cs-sec span2"><h4>Aprendizados</h4><p>Power Platform é suficiente para digitalizar processos críticos de governança sem precisar de um aplicativo customizado do zero.</p></div>
+            </div>
+            <div class="tags"><span class="tag">Power Apps</span><span class="tag">Power Automate</span><span class="tag">SharePoint</span><span class="tag">Regras de negócio</span></div>
+          </div>
+        </details>
 
-        <article class="card reveal">
-          <div class="p-kicker">An&aacute;lise preditiva</div>
-          <h3 class="p-title">Evas&atilde;o &amp; Falhas de OCR</h3>
-          <p class="p-desc">Modelos para antecipar perdas por evas&atilde;o e detec&ccedil;&atilde;o de falhas de reconhecimento (OCR) por pista, apontando problemas de c&acirc;mera na opera&ccedil;&atilde;o.</p>
-          <div class="p-metric">Perdas mitigadas + diagn&oacute;stico</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">SQL</span><span class="tag">FastAPI</span></div>
-        </article>
+      </div>
+    </div>
+  </section>
 
-        <article class="card reveal">
-          <div class="p-kicker">BI &amp; efici&ecirc;ncia</div>
-          <h3 class="p-title">Dashboards &amp; RPA de Relat&oacute;rios/Faturas</h3>
-          <p class="p-desc">Pain&eacute;is gerenciais em Power BI para efici&ecirc;ncia de pistas e pra&ccedil;as, somados a rob&ocirc;s que automatizam o envio de relat&oacute;rios e faturas.</p>
-          <div class="p-metric">+58h/m&ecirc;s economizadas</div>
-          <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Automate</span></div>
-        </article>
+  <section id="antes-depois">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="idx">07</span><h2>Antes &times; Depois</h2></div>
+      <div class="ba-grid">
+        <div class="ba-card reveal">
+          <h3>Autuação de veículos</h3>
+          <div class="ba-row"><span class="ba-tag problema">Problema</span><p>Robô terceirizado, taxa de sucesso de 52%, sem controle sobre as regras.</p></div>
+          <div class="ba-row"><span class="ba-tag solucao">Solução</span><p>Robô próprio com pipeline de visão computacional e motor de regras testável.</p></div>
+          <div class="ba-row"><span class="ba-tag resultado">Resultado</span><p>98% de sucesso + fim do custo com fornecedor externo.</p></div>
+        </div>
+        <div class="ba-card reveal">
+          <h3>Validação de trânsitos</h3>
+          <div class="ba-row"><span class="ba-tag problema">Problema</span><p>~1h45 de triagem manual por rodada, sujeita a erro humano.</p></div>
+          <div class="ba-row"><span class="ba-tag solucao">Solução</span><p>Árvore de decisão automatizada, com auditoria total de cada ação.</p></div>
+          <div class="ba-row"><span class="ba-tag resultado">Resultado</span><p>20 minutos, +200 trânsitos (~5x o volume), zero erro humano.</p></div>
+        </div>
+        <div class="ba-card reveal">
+          <h3>Consultas SQL</h3>
+          <div class="ba-row"><span class="ba-tag problema">Problema</span><p>Consultas lentas em bases operacionais críticas do dia a dia.</p></div>
+          <div class="ba-row"><span class="ba-tag solucao">Solução</span><p>Reestruturação e otimização de queries.</p></div>
+          <div class="ba-row"><span class="ba-tag resultado">Resultado</span><p>Até 90% de redução no tempo de execução.</p></div>
+        </div>
+        <div class="ba-card reveal">
+          <h3>Ajuste de caixa</h3>
+          <div class="ba-row"><span class="ba-tag problema">Problema</span><p>Planilhas sobrecarregadas, sem rastreabilidade formal.</p></div>
+          <div class="ba-row"><span class="ba-tag solucao">Solução</span><p>Power Apps + governança em SharePoint + Power Automate.</p></div>
+          <div class="ba-row"><span class="ba-tag resultado">Resultado</span><p>100% auditável, zero intervenção manual.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="impacto">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="idx">08</span><h2>Impacto em números</h2></div>
+      <p class="sec-lead reveal">Só métricas reais — de currículo, código em produção ou logs de execução. Nada aqui foi inventado.</p>
+      <div class="impact-grid">
+        <div class="kpi reveal"><div class="label">Consultas SQL</div><div class="val"><span data-count="90">0</span><span class="unit">%</span></div><div class="note">de redução no tempo de execução</div></div>
+        <div class="kpi reveal"><div class="label">Autuação de veículos</div><div class="val"><span data-count="52">0</span><span class="arrow"> &rarr; </span><span data-count="98">0</span><span class="unit">%</span></div><div class="note">taxa de sucesso</div></div>
+        <div class="kpi reveal"><div class="label">Validação de trânsitos</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">1h45 &rarr; 20 min</div><div class="note">~5x o volume processado</div></div>
+        <div class="kpi reveal"><div class="label">Detecção de placas (IA)</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">97,1% &times; 93,6%</div><div class="note">modelo próprio vs. genérico · 344 imagens</div></div>
+        <div class="kpi reveal"><div class="label">Automação / RPA</div><div class="val"><span class="unit">+</span><span data-count="58">0</span><span class="unit">h/mês</span></div><div class="note">de trabalho manual eliminado</div></div>
+        <div class="kpi reveal"><div class="label">Confiabilidade</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">5 bugs</div><div class="note">de regra de negócio corrigidos via auditoria em produção</div></div>
+        <div class="kpi reveal"><div class="label">Ajuste de caixa</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">100%</div><div class="note">auditável, zero intervenção manual</div></div>
+        <div class="kpi reveal"><div class="label">Benefícios (RPL Engenharia)</div><div class="val"><span data-count="3000">0</span><span class="unit">+</span></div><div class="note">colaboradores atendidos por planilhas automatizadas</div></div>
       </div>
     </div>
   </section>
 
   <section id="dashboards">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">04</span><h2>Dashboards em Power BI</h2></div>
-      <p class="car-lead reveal">Pain&eacute;is que desenvolvo em Power BI para acompanhamento operacional e financeiro — valida&ccedil;&atilde;o de tr&acirc;nsitos, recupera&ccedil;&atilde;o de receita, tr&aacute;fego, isen&ccedil;&otilde;es e aprova&ccedil;&otilde;es. <b>Todos os valores exibidos s&atilde;o fict&iacute;cios</b>, gerados apenas para fins demonstrativos deste portf&oacute;lio.</p>
+      <div class="sec-head reveal"><span class="idx">09</span><h2>Dashboards em Power BI</h2></div>
+      <p class="car-lead reveal">Painéis que desenvolvo em Power BI para acompanhamento operacional e financeiro, organizados pelas mesmas áreas que atendo no dia a dia — BackOffice, CCA e CCT. <b>Todos os valores exibidos são fictícios</b>, gerados apenas para fins demonstrativos deste portfólio.</p>
 
       <div class="carousel reveal">
         <div class="track" id="track">
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Acompanhamento de Recupera&ccedil;&atilde;o (RPA)</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Acompanhamento de Recuperação (RPA)</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-recuperacao-rpa.png" alt="Acompanhamento de Recuperação (RPA)" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">evas&otilde;es recuperadas por m&ecirc;s e por operadora</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">BackOffice</span></div>
+                <p><b>KPIs:</b> evasões recuperadas por mês e por operadora · <b>Suporta:</b> priorização de reprocessamento e acompanhamento de receita recuperada pelos robôs de TAG/evasão.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>&Iacute;ndice Semanal de Evas&atilde;o &amp; Autua&ccedil;&atilde;o</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Índice Semanal de Evasão &amp; Autuação</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-indice-semanal.png" alt="Índice Semanal de Evasão e Autuação" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">totais e evolu&ccedil;&atilde;o por semana</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">BackOffice</span></div>
+                <p><b>KPIs:</b> totais e evolução semanal de evasão/autuação · <b>Suporta:</b> antecipação de intervenção da operação diante de picos de perda.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Vis&atilde;o Geral — Autua&ccedil;&atilde;o (SID)</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Visão Geral — Autuação (SID)</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-visao-geral-sid.png" alt="Visão Geral — Autuação (SID)" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">evolu&ccedil;&atilde;o mensal e passa&ccedil;&atilde;o para autua&ccedil;&atilde;o</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">BackOffice</span></div>
+                <p><b>KPIs:</b> evolução mensal e passagem para autuação · <b>Suporta:</b> acompanhamento gerencial da eficácia do robô de autuação.</p>
+              </div>
             </div>
           </div>
 
@@ -460,74 +886,95 @@
               <div class="screen-bar"><i></i><i></i><i></i><span>Receita por Forma de Pagamento</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-forma-pagamento.png" alt="Receita por Forma de Pagamento" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">por pra&ccedil;a, opera&ccedil;&atilde;o e concess&atilde;o</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">BackOffice</span></div>
+                <p><b>KPIs:</b> receita por praça, operação e concessão · <b>Suporta:</b> análise financeira de composição de receita para FP&amp;A.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Relat&oacute;rio Mensal de Tr&aacute;fego (VEP)</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Relatório Mensal de Tráfego (VEP)</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-relatorio-vep.png" alt="Relatório Mensal de Tráfego (VEP)" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">realizado vs or&ccedil;ado vs ano anterior</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">BackOffice</span></div>
+                <p><b>KPIs:</b> realizado vs. orçado vs. ano anterior · <b>Suporta:</b> relatório recorrente entregue automaticamente por robô de extração.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Isen&ccedil;&otilde;es — Detalhado</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Isenções — Detalhado</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-isencoes-detalhe.png" alt="Painel de Isenções — Detalhado" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">tipo, grupo e valida&ccedil;&atilde;o de isentos</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">CCT</span></div>
+                <p><b>KPIs:</b> tipo, grupo e validação de isentos · <b>Suporta:</b> a regra de "isenção" do motor de decisão do robô de violação.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Isen&ccedil;&otilde;es — Resumo</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Isenções — Resumo</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-isencoes-resumo.png" alt="Painel de Isenções — Resumo" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">ativas, inativas e cadastros por m&ecirc;s</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">CCT</span></div>
+                <p><b>KPIs:</b> ativas, inativas e cadastros por mês · <b>Suporta:</b> gestão de cadastro de isentos pela equipe de CCT.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Valida&ccedil;&atilde;o — CRA</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Painel de Validação — CRA</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-validacao-cra.png" alt="Painel de Validação — CRA" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">% de valida&ccedil;&atilde;o por pra&ccedil;a e por pista</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">CCT</span></div>
+                <p><b>KPIs:</b> % de validação por praça e por pista · <b>Suporta:</b> checklist de verificação (CRA/CRC) e diagnóstico de câmera com falha de OCR.</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Aprova&ccedil;&otilde;es &amp; Solicita&ccedil;&otilde;es</span><span class="live">Power BI</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Aprovações &amp; Solicitações</span><span class="live">Power BI</span></div>
               <div class="img-wrap">
                 <img src="dashboards/dash-aprovacoes.png" alt="Aprovações e Solicitações" loading="lazy" decoding="async">
-                <span class="fict">dados fict&iacute;cios</span>
+                <span class="fict">dados fictícios</span>
               </div>
-              <div class="img-caption">motivos, status e volume mensal</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">CCA</span></div>
+                <p><b>KPIs:</b> motivos, status e volume mensal · <b>Suporta:</b> acompanhamento do fluxo de aprovação do Ajuste de Caixa (Power Apps).</p>
+              </div>
             </div>
           </div>
 
           <div class="slide">
             <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Arquitetura do Processo &mdash; Ajuste de Caixa</span><span class="live">Infogr&aacute;fico</span></div>
+              <div class="screen-bar"><i></i><i></i><i></i><span>Arquitetura do Processo — Ajuste de Caixa</span><span class="live">Infográfico</span></div>
               <div class="img-wrap">
                 <img src="dashboards/infografico-processo.svg" alt="Arquitetura do Processo — Ajuste de Caixa" loading="lazy" decoding="async">
               </div>
-              <div class="img-caption">Fluxo de transforma&ccedil;&atilde;o digital do antes (manual) vs depois (Power Platform)</div>
+              <div class="dash-meta">
+                <div class="dm-top"><span class="dash-area">CCA</span></div>
+                <p>Fluxo de transformação digital do antes (manual) vs. depois (Power Platform).</p>
+              </div>
             </div>
           </div>
 
@@ -536,34 +983,8 @@
         <div class="car-ctrl">
           <div class="dots" id="dots"></div>
           <span class="car-hint">arraste ou use as setas &rarr;</span>
-          <div class="arrows"><button id="prev" aria-label="Anterior">&larr;</button><button id="next" aria-label="Pr&oacute;ximo">&rarr;</button></div>
+          <div class="arrows"><button id="prev" aria-label="Anterior">&larr;</button><button id="next" aria-label="Próximo">&rarr;</button></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">05</span><h2>Compet&ecirc;ncias t&eacute;cnicas</h2></div>
-      <div class="skill-grid">
-        <div class="skill-cat reveal"><h3>An&aacute;lise &amp; BI</h3><div class="chips"><span class="chip key">Power BI</span><span class="chip">DAX</span><span class="chip">Dashboards</span><span class="chip">KPIs</span><span class="chip">An&aacute;lise Preditiva</span></div></div>
-        <div class="skill-cat reveal"><h3>Dados &amp; Banco</h3><div class="chips"><span class="chip key">SQL</span><span class="chip">MySQL</span><span class="chip">Modelagem (DDL)</span><span class="chip">Power Query</span><span class="chip">Excel</span></div></div>
-        <div class="skill-cat reveal"><h3>Linguagens</h3><div class="chips"><span class="chip key">Python</span><span class="chip">Pandas</span><span class="chip">PySpark</span><span class="chip">JavaScript</span></div></div>
-        <div class="skill-cat reveal"><h3>Automa&ccedil;&atilde;o &amp; RPA</h3><div class="chips"><span class="chip key">Power Automate</span><span class="chip">Power Apps</span><span class="chip key">Playwright</span><span class="chip">Web Scraping</span></div></div>
-        <div class="skill-cat reveal"><h3>APIs &amp; Web</h3><div class="chips"><span class="chip key">APIs REST</span><span class="chip">FastAPI</span><span class="chip">HTML/CSS/JS</span></div></div>
-        <div class="skill-cat reveal"><h3>IA &amp; Agentes</h3><div class="chips"><span class="chip key">IA para Solu&ccedil;&otilde;es</span><span class="chip">Cria&ccedil;&atilde;o de Agentes</span><span class="chip">Arquitetura de Sistemas</span><span class="chip">Seguran&ccedil;a</span></div></div>
-        <div class="skill-cat reveal"><h3>Ferramentas &amp; ERPs</h3><div class="chips"><span class="chip">Git</span><span class="chip">SAP S/4HANA</span><span class="chip">TOTVS</span><span class="chip key">SharePoint</span></div></div>
-        <div class="skill-cat reveal"><h3>Planejamento &amp; Finan&ccedil;as</h3><div class="chips"><span class="chip key">Planejamento Financeiro</span><span class="chip">Or&ccedil;amento</span><span class="chip">FP&amp;A</span><span class="chip">An&aacute;lise de Varia&ccedil;&atilde;o</span><span class="chip">IFRS 9</span><span class="chip">Modelagem Financeira</span></div></div>
-        <div class="skill-cat reveal"><h3>Processos &amp; Opera&ccedil;&otilde;es</h3><div class="chips"><span class="chip key">Mapeamento de Processos</span><span class="chip">Melhoria Cont&iacute;nua</span><span class="chip">KPIs Operacionais</span><span class="chip">Gest&atilde;o &Aacute;gil (Kanban)</span></div></div>
-      </div>
-
-      <div class="sec-head reveal" style="margin-top:60px"><span class="idx">06</span><h2>Certifica&ccedil;&otilde;es</h2></div>
-      <div class="cert-row reveal">
-        <div class="cert"><span class="c-ic">&#9670;</span> CEA — ANBIMA</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Power BI — BI &amp; Data Science</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> DevOps — Rocketseat</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Fundamentos em Python</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Forma&ccedil;&atilde;o em Lideran&ccedil;a</div>
       </div>
     </div>
   </section>
@@ -572,8 +993,8 @@
     <div class="wrap">
       <div class="contact-box reveal">
         <span class="eyebrow">Contato</span>
-        <h2>Para mais informa&ccedil;&otilde;es</h2>
-        <p>Sobre dados, automa&ccedil;&atilde;o, BI ou um bom desafio t&eacute;cnico — &eacute; s&oacute; chamar.</p>
+        <h2>Para mais informações</h2>
+        <p>Sobre dados, automação, IA aplicada, BI ou um bom desafio técnico — é só chamar.</p>
         <div class="contact-actions">
           <a href="mailto:pablohenriquemelo@outlook.com.br" class="btn btn-blue"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg> E-mail</a>
           <a href="https://wa.me/5581986502789" target="_blank" rel="noopener" class="btn btn-wpp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.75-.86-2-.96-.27-.1-.47-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.19-.24-.57-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.25-.7.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg> WhatsApp</a>
