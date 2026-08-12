@@ -283,7 +283,6 @@
     <nav class="nav-links" id="navLinks">
       <a href="#sobre">Sobre</a>
       <a href="#stack">Stack</a>
-      <a href="#arquitetura">Arquitetura</a>
       <a href="#projetos">Projetos</a>
       <a href="#impacto">Impacto</a>
       <a href="#dashboards">Dashboards</a>
@@ -357,7 +356,7 @@
           <div class="fact"><span class="k">Base</span><span class="v">Recife, PE</span></div>
           <div class="fact"><span class="k">Atuação</span><span class="v">Dados · Automação · IA aplicada</span></div>
           <div class="fact"><span class="k">Stack core</span><span class="v">Python · SQL · Power BI</span></div>
-          <div class="fact"><span class="k">Formação</span><span class="v">Ciências Contábeis</span></div>
+          <div class="fact"><span class="k">Formação</span><span class="v">Ciências Contábeis · Análise e Desenvolvimento de Sistemas (em curso)</span></div>
           <div class="fact"><span class="k">Idiomas</span><span class="v">Português · Inglês (técnico)</span></div>
         </div>
       </div>
@@ -440,143 +439,12 @@
         <div class="skill-cat reveal"><h3>IA &amp; Visão Computacional</h3><div class="chips"><span class="chip key">YOLO / ONNX Runtime</span><span class="chip">OCR</span><span class="chip">OpenCV</span><span class="chip">Modelos fine-tuned próprios</span><span class="chip">Detecção de anomalias</span></div></div>
         <div class="skill-cat reveal"><h3>Frameworks</h3><div class="chips"><span class="chip key">FastAPI</span><span class="chip">Pydantic</span><span class="chip">SQLAlchemy</span><span class="chip">APScheduler</span><span class="chip">pytest</span></div></div>
       </div>
-
-      <div class="sec-head reveal" style="margin-top:60px"><span class="idx">04</span><h2>Certificações</h2></div>
-      <div class="cert-row reveal">
-        <div class="cert"><span class="c-ic">&#9670;</span> CEA — ANBIMA</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Power BI — BI &amp; Data Science</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> DevOps — Rocketseat</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Fundamentos em Python (Pandas/PySpark)</div>
-        <div class="cert"><span class="c-ic">&#9670;</span> Formação em Liderança</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="arquitetura">
-    <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">05</span><h2>Arquitetura das soluções</h2></div>
-      <p class="sec-lead reveal">Como os dados realmente fluem, da fonte até a decisão do usuário — em dois níveis: o macro-fluxo da minha stack, e o pipeline de decisão automatizada de um robô específico.</p>
-
-      <div class="dark-panel reveal">
-        <h3>Fluxo macro — de sistemas de origem à decisão de negócio</h3>
-        <p class="arch-note">Do dado disperso em ERPs, sistemas legados e portais até a interface que o usuário final realmente usa para decidir.</p>
-        <div class="arch-wrap">
-          <svg viewBox="0 0 1680 240" role="img" aria-label="Fluxo: Sistemas de Origem para Python, SQL Server/SQLite, Power BI, Power Automate, Power Apps e Usuário">
-            <defs>
-              <marker id="arrowhead-macro" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                <path d="M0,0 L10,5 L0,10 Z" fill="#3E82C9" />
-              </marker>
-            </defs>
-            <!-- boxes: x = 20 + i*240, width 200, y 75, height 90 -->
-            <g>
-              <rect class="abox-rect" x="20" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="120" y="112" text-anchor="middle">Sistemas de</text>
-              <text class="abox-title" x="120" y="130" text-anchor="middle">Origem</text>
-              <text class="abox-sub" x="120" y="148" text-anchor="middle">ERP, legado, portais</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="260" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="360" y="120" text-anchor="middle">Python</text>
-              <text class="abox-sub" x="360" y="140" text-anchor="middle">ETL &amp; robôs</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="500" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="600" y="112" text-anchor="middle">SQL Server</text>
-              <text class="abox-title" x="600" y="130" text-anchor="middle">/ SQLite</text>
-              <text class="abox-sub" x="600" y="148" text-anchor="middle">persistência &amp; auditoria</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="740" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="840" y="112" text-anchor="middle">Power BI</text>
-              <text class="abox-sub" x="840" y="130" text-anchor="middle">análise &amp; KPIs</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="980" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="1080" y="112" text-anchor="middle">Power</text>
-              <text class="abox-title" x="1080" y="130" text-anchor="middle">Automate</text>
-              <text class="abox-sub" x="1080" y="148" text-anchor="middle">orquestração</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="1220" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="1320" y="112" text-anchor="middle">Power</text>
-              <text class="abox-title" x="1320" y="130" text-anchor="middle">Apps</text>
-              <text class="abox-sub" x="1320" y="148" text-anchor="middle">interface</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="1460" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="1560" y="112" text-anchor="middle">Usuário</text>
-              <text class="abox-sub" x="1560" y="130" text-anchor="middle">decisão de</text>
-              <text class="abox-sub" x="1560" y="146" text-anchor="middle">negócio</text>
-            </g>
-            <line class="aarrow" x1="220" y1="120" x2="256" y2="120" marker-end="url(#arrowhead-macro)"/>
-            <line class="aarrow" x1="460" y1="120" x2="496" y2="120" marker-end="url(#arrowhead-macro)"/>
-            <line class="aarrow" x1="700" y1="120" x2="736" y2="120" marker-end="url(#arrowhead-macro)"/>
-            <line class="aarrow" x1="940" y1="120" x2="976" y2="120" marker-end="url(#arrowhead-macro)"/>
-            <line class="aarrow" x1="1180" y1="120" x2="1216" y2="120" marker-end="url(#arrowhead-macro)"/>
-            <line class="aarrow" x1="1420" y1="120" x2="1456" y2="120" marker-end="url(#arrowhead-macro)"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="dark-panel reveal">
-        <h3>Pipeline de decisão — robô de autuação de veículos</h3>
-        <p class="arch-note">O fluxo real por trás do case de maior impacto: da consulta ao banco até a auditoria completa de cada decisão automatizada.</p>
-        <div class="arch-wrap">
-          <svg viewBox="0 0 1440 240" role="img" aria-label="Pipeline: SQL Server, Fotos e OCR, Motor de Regras, Ação no Sistema, Auditoria, Painel FastAPI">
-            <defs>
-              <marker id="arrowhead-pipe" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                <path d="M0,0 L10,5 L0,10 Z" fill="#3E82C9" />
-              </marker>
-            </defs>
-            <g>
-              <rect class="abox-rect" x="20" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="120" y="120" text-anchor="middle">SQL Server</text>
-              <text class="abox-sub" x="120" y="140" text-anchor="middle">trânsitos do dia</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="260" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="360" y="112" text-anchor="middle">Fotos + OCR</text>
-              <text class="abox-sub" x="360" y="130" text-anchor="middle">visão computacional</text>
-              <text class="abox-sub" x="360" y="146" text-anchor="middle">(YOLO + OCR ONNX)</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="500" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="600" y="112" text-anchor="middle">Motor de</text>
-              <text class="abox-title" x="600" y="130" text-anchor="middle">Regras</text>
-              <text class="abox-sub" x="600" y="148" text-anchor="middle">decisão pura, testável</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="740" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="840" y="112" text-anchor="middle">Ação no</text>
-              <text class="abox-title" x="840" y="130" text-anchor="middle">Sistema</text>
-              <text class="abox-sub" x="840" y="148" text-anchor="middle">ou fila manual</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="980" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="1080" y="112" text-anchor="middle">Auditoria</text>
-              <text class="abox-sub" x="1080" y="130" text-anchor="middle">SQLite</text>
-              <text class="abox-sub" x="1080" y="146" text-anchor="middle">toda ação registrada</text>
-            </g>
-            <g>
-              <rect class="abox-rect" x="1220" y="75" width="200" height="90" rx="12"/>
-              <text class="abox-title" x="1320" y="112" text-anchor="middle">Painel</text>
-              <text class="abox-title" x="1320" y="130" text-anchor="middle">FastAPI</text>
-              <text class="abox-sub" x="1320" y="148" text-anchor="middle">acompanhamento</text>
-            </g>
-            <line class="aarrow" x1="220" y1="120" x2="256" y2="120" marker-end="url(#arrowhead-pipe)"/>
-            <line class="aarrow" x1="460" y1="120" x2="496" y2="120" marker-end="url(#arrowhead-pipe)"/>
-            <line class="aarrow" x1="700" y1="120" x2="736" y2="120" marker-end="url(#arrowhead-pipe)"/>
-            <line class="aarrow" x1="940" y1="120" x2="976" y2="120" marker-end="url(#arrowhead-pipe)"/>
-            <line class="aarrow" x1="1180" y1="120" x2="1216" y2="120" marker-end="url(#arrowhead-pipe)"/>
-          </svg>
-        </div>
-      </div>
     </div>
   </section>
 
   <section id="projetos">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">06</span><h2>Projetos em destaque</h2></div>
+      <div class="sec-head reveal"><span class="idx">04</span><h2>Projetos em destaque</h2></div>
       <p class="sec-lead reveal">Estudos de caso reais — clique em cada um para ver contexto, arquitetura, desafios e resultado completos.</p>
 
       <div class="cs-list">
@@ -784,7 +652,7 @@
 
   <section id="antes-depois">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">07</span><h2>Antes &times; Depois</h2></div>
+      <div class="sec-head reveal"><span class="idx">05</span><h2>Antes &times; Depois</h2></div>
       <div class="ba-grid">
         <div class="ba-card reveal">
           <h3>Autuação de veículos</h3>
@@ -816,7 +684,7 @@
 
   <section id="impacto">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">08</span><h2>Impacto em números</h2></div>
+      <div class="sec-head reveal"><span class="idx">06</span><h2>Impacto em números</h2></div>
       <p class="sec-lead reveal">Só métricas reais — de currículo, código em produção ou logs de execução. Nada aqui foi inventado.</p>
       <div class="impact-grid">
         <div class="kpi reveal"><div class="label">Consultas SQL</div><div class="val"><span data-count="90">0</span><span class="unit">%</span></div><div class="note">de redução no tempo de execução</div></div>
@@ -826,14 +694,13 @@
         <div class="kpi reveal"><div class="label">Automação / RPA</div><div class="val"><span class="unit">+</span><span data-count="58">0</span><span class="unit">h/mês</span></div><div class="note">de trabalho manual eliminado</div></div>
         <div class="kpi reveal"><div class="label">Confiabilidade</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">5 bugs</div><div class="note">de regra de negócio corrigidos via auditoria em produção</div></div>
         <div class="kpi reveal"><div class="label">Ajuste de caixa</div><div class="val" style="font-size:clamp(1.3rem,3vw,1.8rem)">100%</div><div class="note">auditável, zero intervenção manual</div></div>
-        <div class="kpi reveal"><div class="label">Benefícios (RPL Engenharia)</div><div class="val"><span data-count="3000">0</span><span class="unit">+</span></div><div class="note">colaboradores atendidos por planilhas automatizadas</div></div>
       </div>
     </div>
   </section>
 
   <section id="dashboards">
     <div class="wrap">
-      <div class="sec-head reveal"><span class="idx">09</span><h2>Dashboards em Power BI</h2></div>
+      <div class="sec-head reveal"><span class="idx">07</span><h2>Dashboards em Power BI</h2></div>
       <p class="car-lead reveal">Painéis que desenvolvo em Power BI para acompanhamento operacional e financeiro, organizados pelas mesmas áreas que atendo no dia a dia — BackOffice, CCA e CCT. <b>Todos os valores exibidos são fictícios</b>, gerados apenas para fins demonstrativos deste portfólio.</p>
 
       <div class="carousel reveal">
@@ -961,19 +828,6 @@
               <div class="dash-meta">
                 <div class="dm-top"><span class="dash-area">CCA</span></div>
                 <p><b>KPIs:</b> motivos, status e volume mensal · <b>Suporta:</b> acompanhamento do fluxo de aprovação do Ajuste de Caixa (Power Apps).</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="screen">
-              <div class="screen-bar"><i></i><i></i><i></i><span>Arquitetura do Processo — Ajuste de Caixa</span><span class="live">Infográfico</span></div>
-              <div class="img-wrap">
-                <img src="dashboards/infografico-processo.svg" alt="Arquitetura do Processo — Ajuste de Caixa" loading="lazy" decoding="async">
-              </div>
-              <div class="dash-meta">
-                <div class="dm-top"><span class="dash-area">CCA</span></div>
-                <p>Fluxo de transformação digital do antes (manual) vs. depois (Power Platform).</p>
               </div>
             </div>
           </div>
