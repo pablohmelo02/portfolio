@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Substitua SEU-DOMINIO-AQUI pela URL final de publicação deste portfólio (ex: GitHub Pages ou domínio próprio). -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SEU-DOMINIO-AQUI/</loc>
+    <loc>https://www.pablohenriquemelo.com.br/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
