@@ -17,7 +17,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -151,8 +150,6 @@
     footer{padding:28px 0 34px;color:var(--muted);font-size:.78rem}
     .footer-inner{display:flex;justify-content:space-between;gap:20px}
 
-    .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
-    .js .reveal.visible{opacity:1;transform:none}
     @media(max-width:900px){
       .nav-links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:10px 20px 18px;background:var(--surface);border-bottom:1px solid var(--line)}
       .nav-links.open{display:flex}.nav-links a{padding:10px 0}.nav-links .nav-cta{text-align:center;margin-top:7px}.menu-btn{display:block}
@@ -166,7 +163,7 @@
       .results-grid,.stack-grid,.projects-grid{grid-template-columns:1fr}.result{border-right:0}.result:last-child{grid-column:auto}.project:last-child{grid-column:auto}
       .result{padding:22px}.project{min-height:auto}.slide{flex-basis:100%}.dash-caption{font-size:.78rem}.footer-inner{flex-direction:column}
     }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
@@ -337,11 +334,6 @@
     navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false');
     }));
-
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}
-    }), {threshold:.08});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     const track = document.getElementById('track');
     const slides = [...track.children];
